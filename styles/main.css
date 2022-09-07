@@ -1,0 +1,166 @@
+/* Default */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+html::-webkit-scrollbar-track {
+  background-color: #0e3544;
+}
+html::-webkit-scrollbar {
+  width: 5px;
+  background-color: #0e3544;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #1e5968;
+  border-radius: 0.5rem;
+}
+
+body {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 1.6rem;
+  font-family: "Arial", sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+  background-color: #0a3140;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  margin-bottom: 0.5rem;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002941;
+  padding: 1rem 2rem;
+}
+.navbar__timer {
+  background-image: linear-gradient(to bottom, #093443, #163d4c, #204756, #2b5060, #355a6a);
+  padding: 1rem 3rem;
+}
+
+.sidebar {
+  position: fixed;
+  background-color: #002941;
+  width: 22rem;
+  height: 100vh;
+  margin-top: 8rem;
+  margin-right: 0.8rem;
+  font-size: 1.35rem;
+  padding: 2.5rem 1rem 5rem 1rem;
+}
+.sidebar-items {
+  margin: 0.7rem 0;
+  padding: 0rem 1rem;
+  transition: all 0.3s;
+}
+.sidebar-items img {
+  width: 1.4rem;
+  margin-right: 0.5rem;
+}
+.sidebar-items:hover {
+  color: #fbb040;
+}
+.sidebar .gradient-items {
+  background-image: linear-gradient(to bottom, #093443, #163d4c, #204756, #2b5060, #355a6a);
+  padding: 0.5rem 1rem;
+}
+
+.admin-email {
+  font-size: 1.3rem;
+  margin: 0rem 0 1rem 0;
+}
+
+.active {
+  color: #fbb040 !important;
+}
+
+.main-section {
+  display: flex;
+}
+
+.dashboard {
+  margin-top: 8.5rem;
+  margin-left: 22.5rem;
+}
+.dashboard-table-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.dashboard .table-card {
+  font-size: 1.5rem;
+  width: 34%;
+}
+.dashboard .small-card {
+  width: 30%;
+}
+.dashboard .table {
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+.dashboard .card-head {
+  background-image: linear-gradient(to bottom, #093443, #163d4c, #204756, #2b5060, #355a6a);
+  padding: 0.5rem 2rem;
+  text-align: center;
+}
+.dashboard .card-head-white p {
+  display: flex;
+  justify-content: space-between;
+}
+.dashboard .table-head {
+  background: rgb(12, 53, 68);
+  background: linear-gradient(180deg, rgb(12, 53, 68) 0%, rgb(48, 86, 102) 100%);
+  padding: 0.3rem;
+  font-weight: 200;
+}
+.dashboard .table-body tr {
+  background-color: #18677d;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.dashboard .table-body tr:hover {
+  background-color: rgba(24, 103, 125, 0.5);
+}
+.dashboard .table-body td {
+  padding: 0.5rem;
+}
+
+.red-font {
+  color: #ed1b23;
+}
+
+.green-font {
+  color: #00a650;
+}
+
+.white-box {
+  background-color: #ffffff;
+  padding: 0.2rem 0.8rem;
+  font-size: 1.25rem;
+}/*# sourceMappingURL=main.css.map */

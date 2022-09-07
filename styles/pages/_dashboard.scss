@@ -1,0 +1,75 @@
+.main-section {
+	display: flex;
+}
+
+.dashboard {
+	margin-top: 8.5rem;
+	margin-left: 22.5rem;
+
+	&-table-cards {
+		@include flex-row;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+
+	.table-card {
+		font-size: 1.5rem;
+		width: 34%;
+	}
+
+	.small-card {
+		width: 30%;
+	}
+
+	.table {
+		font-size: 1.5rem;
+		width: 100%;
+		text-align: center;
+		border-collapse: collapse;
+	}
+
+	.card-head {
+		@include grad-1;
+		padding: 0.5rem 2rem;
+		text-align: center;
+	}
+
+	.card-head-white p {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.table-head {
+		@include grad-2;
+		padding: 0.3rem;
+		font-weight: 200;
+	}
+
+	.table-body tr {
+		background-color: $color-secondary-teal;
+		cursor: pointer;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: rgba($color-secondary-teal, 0.5);
+		}
+	}
+
+	.table-body td {
+		padding: 0.5rem;
+	}
+}
+
+.red-font {
+	color: $color-secondary-red;
+}
+
+.green-font {
+	color: $color-secondary-green;
+}
+
+.white-box {
+	background-color: $color-primary-white;
+	padding: 0.2rem 0.8rem;
+	font-size: 1.25rem;
+}
