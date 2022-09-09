@@ -5,6 +5,8 @@
 .dashboard {
 	margin-top: 8.5rem;
 	margin-left: 22.5rem;
+	width: 100%;
+	height: 100%;
 
 	&-table-cards {
 		@include flex-row;
@@ -25,7 +27,6 @@
 		font-size: 1.5rem;
 		width: 100%;
 		text-align: center;
-		border-collapse: collapse;
 	}
 
 	.card-head {
@@ -72,4 +73,39 @@
 	background-color: $color-primary-white;
 	padding: 0.2rem 0.8rem;
 	font-size: 1.25rem;
+}
+
+.support-summary-container {
+	margin-top: 3rem;
+	padding-bottom: 3rem;
+	font-size: 1.5rem;
+}
+
+.summary-box {
+	width: 30%;
+	background-color: $color-secondary-teal;
+}
+
+.summary-head {
+	@include grad-1;
+	padding: 0.5rem 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.summary-card {
+	.summary-card-head {
+		@include grad-2;
+		padding: 0.5rem 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.summary-card-data {
+		padding: 0 1.5rem 1rem 1.5rem;
+
+		.summary-data {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 0.5rem;
+		}
+	}
 }

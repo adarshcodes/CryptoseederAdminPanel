@@ -9,6 +9,16 @@
 
 html {
 	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-size: 1.6rem;
+	font-family: "Arial", sans-serif;
+	color: $color-primary-white;
+	background-color: $color-primary-green;
+
 	overflow-x: hidden;
 	overflow-y: scroll;
 
@@ -27,16 +37,6 @@ html {
 	}
 }
 
-body {
-	box-sizing: border-box;
-	scroll-behavior: smooth;
-	font-size: 1.6rem;
-	font-family: "Arial", sans-serif;
-	color: $color-primary-white;
-	overflow-x: hidden;
-	background-color: $color-primary-green;
-}
-
 a {
 	text-decoration: none;
 	color: inherit;
@@ -44,4 +44,8 @@ a {
 
 li {
 	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
 }
