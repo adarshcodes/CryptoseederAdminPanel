@@ -448,6 +448,18 @@ table {
   height: 40%;
   margin-top: 1rem;
 }
+.user-details .trade-history {
+  font-size: 1.3rem;
+}
+.user-details .trade-history thead {
+  text-align: left;
+}
+.user-details .trade-history thead tr th {
+  padding: 1.5rem 0.5rem;
+}
+.user-details .trade-history tbody tr td {
+  padding: 1rem 0.5rem;
+}
 
 .inline-flex {
   display: inline-flex !important;
@@ -456,4 +468,9 @@ table {
 
 .tablink-active {
   border-bottom: 2px solid #e3a938 !important;
+}
+
+tbody tr:hover {
+  background-color: #063342;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

@@ -119,6 +119,22 @@
 			}
 		}
 	}
+
+	.trade-history {
+		font-size: 1.3rem;
+
+		thead {
+			text-align: left;
+
+			tr th {
+				padding: 1.5rem 0.5rem;
+			}
+		}
+
+		tbody tr td {
+			padding: 1rem 0.5rem;
+		}
+	}
 }
 
 .inline-flex {
@@ -128,4 +144,9 @@
 
 .tablink-active {
 	border-bottom: 2px solid #e3a938 !important;
+}
+
+tbody tr:hover {
+	background-color: $color-secondary-blue;
+	cursor: pointer;
 }
