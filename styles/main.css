@@ -460,6 +460,33 @@ table {
 .user-details .trade-history tbody tr td {
   padding: 1rem 0.5rem;
 }
+.user-details .wallet-container {
+  width: 60%;
+  border-right: 6px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, rgb(0, 40, 63) 0%, rgba(130, 16, 20, 0) 103%);
+}
+.user-details .wallet-container .wallet-details {
+  margin-bottom: 1rem;
+}
+.user-details .wallet-container .wallet-list {
+  padding: 1.5rem;
+  width: 75%;
+  margin-bottom: 3rem;
+}
+.user-details .wallet-container .wallet-list li {
+  display: flex;
+}
+.user-details .wallet-container .wallet-list li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.user-details .wallet-container .wallet-list li span {
+  width: 40%;
+}
+.user-details .wallet-container .wallet-list-grad {
+  background: rgb(12, 53, 68);
+  background: linear-gradient(180deg, rgb(12, 53, 68) 0%, rgb(48, 86, 102) 100%);
+}
 
 .inline-flex {
   display: inline-flex !important;

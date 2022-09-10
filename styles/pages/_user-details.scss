@@ -135,6 +135,42 @@
 			padding: 1rem 0.5rem;
 		}
 	}
+
+	.wallet-container {
+		width: 60%;
+		border-right: 6px solid;
+		border-image-slice: 1;
+		border-image-source: linear-gradient(
+			180deg,
+			rgba(0, 40, 63, 1) 0%,
+			rgba(130, 16, 20, 0) 103%
+		);
+
+		.wallet-details {
+			margin-bottom: 1rem;
+		}
+
+		.wallet-list {
+			padding: 1.5rem;
+			width: 75%;
+			li {
+				display: flex;
+
+				&:not(:last-child) {
+					margin-bottom: 1rem;
+				}
+
+				span {
+					width: 40%;
+				}
+			}
+			margin-bottom: 3rem;
+
+			&-grad {
+				@include grad-2;
+			}
+		}
+	}
 }
 
 .inline-flex {
