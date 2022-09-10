@@ -352,4 +352,54 @@ table {
   background-image: none;
   border: 1px solid #cccccc;
   color: #002941;
+}
+
+.user-details .back-img {
+  margin-right: 0.5rem;
+}
+.user-details .tabContentDetails {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+}
+.user-details .user-tab {
+  display: flex;
+}
+.user-details .user-tab .tablinks {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1.4rem;
+  padding: 1rem;
+  border-bottom: solid 2px #0a3140;
+  cursor: pointer;
+}
+.user-details .user-tab .border-grad {
+  background: rgb(0, 40, 63);
+  background: linear-gradient(180deg, rgb(0, 40, 63) 0%, rgba(130, 16, 20, 0) 100%);
+  width: 2px;
+  height: 3.5rem;
+}
+.user-details .user-details-list .user-details-items {
+  display: flex;
+  margin: 0.8rem 0;
+  padding: 0.8rem 0;
+  border-bottom: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, rgb(0, 40, 63) 0%, rgba(130, 16, 20, 0) 100%);
+}
+.user-details .user-details-list .user-details-items span {
+  width: 30%;
+}
+
+.inline-flex {
+  display: inline-flex !important;
+  flex-direction: column;
+}
+
+.tablink-active {
+  border-bottom: 2px solid #e3a938 !important;
 }/*# sourceMappingURL=main.css.map */

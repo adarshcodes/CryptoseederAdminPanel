@@ -1,0 +1,62 @@
+.user-details {
+	.back-img {
+		margin-right: 0.5rem;
+	}
+
+	.tabContentDetails {
+		display: none;
+		width: 100%;
+		flex-direction: column;
+		padding-top: 2rem;
+		font-size: 1.5rem;
+	}
+
+	.user-tab {
+		display: flex;
+
+		.tablinks {
+			outline: none;
+			border: none;
+			background-color: transparent;
+			color: $color-primary-white;
+			font-size: 1.4rem;
+			padding: 1rem;
+			border-bottom: solid 2px $color-primary-green;
+			cursor: pointer;
+		}
+
+		.border-grad {
+			@include grad-3;
+			width: 2px;
+			height: 3.5rem;
+		}
+	}
+
+	.user-details-list {
+		.user-details-items {
+			display: flex;
+			margin: 0.8rem 0;
+			padding: 0.8rem 0;
+			border-bottom: 2px solid;
+			border-image-slice: 1;
+			border-image-source: linear-gradient(
+				90deg,
+				rgba(0, 40, 63, 1) 0%,
+				rgba(130, 16, 20, 0) 100%
+			);
+
+			span {
+				width: 30%;
+			}
+		}
+	}
+}
+
+.inline-flex {
+	display: inline-flex !important;
+	flex-direction: column;
+}
+
+.tablink-active {
+	border-bottom: 2px solid #e3a938 !important;
+}

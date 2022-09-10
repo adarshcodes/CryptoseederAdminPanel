@@ -110,3 +110,28 @@ let pager = new Pager("pager", 10);
 pager.init();
 pager.showPageNav("pager", "pageNavPosition");
 pager.showPage(1);
+
+// Tab Switching
+function openUserDetail(evt, tabName) {
+	var i, tabContentDetails, tablinks;
+	tabContentDetails = document.getElementsByClassName("tabContentDetails");
+	for (i = 0; i < tabContentDetails.length; i++) {
+		tabContentDetails[i].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(
+			" tablink-active",
+			""
+		);
+	}
+
+	let tabContent = document.querySelectorAll(".tabContentDetails");
+
+	tabContent.forEach(function (tab) {
+		tab.classList.remove("inline-flex");
+	});
+
+	document.getElementById(tabName).style.display = "inline-flex";
+	evt.currentTarget.classList.toggle("tablink-active");
+}
