@@ -9,6 +9,7 @@
 		flex-direction: column;
 		padding-top: 2rem;
 		font-size: 1.5rem;
+		overflow-x: auto;
 	}
 
 	.user-tab {
@@ -47,6 +48,74 @@
 
 			span {
 				width: 30%;
+			}
+		}
+	}
+
+	.txn-history {
+		margin-top: 3rem;
+		font-size: 1.3rem;
+
+		tbody tr td {
+			padding: 1rem;
+		}
+	}
+
+	.kyc-container {
+		display: flex;
+		width: 100%;
+
+		.kyc-details {
+			width: 45%;
+			border-right: 6px solid;
+			border-image-slice: 1;
+			border-image-source: linear-gradient(
+				180deg,
+				rgba(0, 40, 63, 1) 0%,
+				rgba(130, 16, 20, 0) 103%
+			);
+		}
+
+		.kyc-items {
+			display: flex;
+			padding: 0.6rem 0;
+
+			span {
+				width: 50%;
+			}
+		}
+
+		.id-proof {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+
+			.id-card {
+				cursor: pointer;
+				width: 10rem;
+				height: 6rem;
+				background-color: $color-primary-white;
+			}
+		}
+
+		.document-preview {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			h2 {
+				font-size: 2.35rem;
+				font-weight: 300;
+				margin-bottom: 5rem;
+			}
+
+			.id-card-preview {
+				background-color: $color-primary-white;
+				width: 70%;
+				height: 40%;
+				margin-top: 1rem;
 			}
 		}
 	}

@@ -363,6 +363,7 @@ table {
   flex-direction: column;
   padding-top: 2rem;
   font-size: 1.5rem;
+  overflow-x: auto;
 }
 .user-details .user-tab {
   display: flex;
@@ -393,6 +394,59 @@ table {
 }
 .user-details .user-details-list .user-details-items span {
   width: 30%;
+}
+.user-details .txn-history {
+  margin-top: 3rem;
+  font-size: 1.3rem;
+}
+.user-details .txn-history tbody tr td {
+  padding: 1rem;
+}
+.user-details .kyc-container {
+  display: flex;
+  width: 100%;
+}
+.user-details .kyc-container .kyc-details {
+  width: 45%;
+  border-right: 6px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, rgb(0, 40, 63) 0%, rgba(130, 16, 20, 0) 103%);
+}
+.user-details .kyc-container .kyc-items {
+  display: flex;
+  padding: 0.6rem 0;
+}
+.user-details .kyc-container .kyc-items span {
+  width: 50%;
+}
+.user-details .kyc-container .id-proof {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.user-details .kyc-container .id-proof .id-card {
+  cursor: pointer;
+  width: 10rem;
+  height: 6rem;
+  background-color: #ffffff;
+}
+.user-details .kyc-container .document-preview {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user-details .kyc-container .document-preview h2 {
+  font-size: 2.35rem;
+  font-weight: 300;
+  margin-bottom: 5rem;
+}
+.user-details .kyc-container .document-preview .id-card-preview {
+  background-color: #ffffff;
+  width: 70%;
+  height: 40%;
+  margin-top: 1rem;
 }
 
 .inline-flex {
