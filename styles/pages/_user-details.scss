@@ -67,13 +67,7 @@
 
 		.kyc-details {
 			width: 45%;
-			border-right: 6px solid;
-			border-image-slice: 1;
-			border-image-source: linear-gradient(
-				180deg,
-				rgba(0, 40, 63, 1) 0%,
-				rgba(130, 16, 20, 0) 103%
-			);
+			@include border-right;
 		}
 
 		.kyc-items {
@@ -183,6 +177,6 @@
 }
 
 tbody tr:hover {
-	background-color: $color-secondary-blue;
+	background-color: #107e8e;
 	cursor: pointer;
 }

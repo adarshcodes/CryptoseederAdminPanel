@@ -92,3 +92,13 @@
 		rgba(130, 16, 20, 0) 100%
 	);
 }
+
+@mixin border-right {
+	border-right: 6px solid;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(
+		180deg,
+		rgba(0, 40, 63, 1) 0%,
+		rgba(130, 16, 20, 0) 103%
+	);
+}

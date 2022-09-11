@@ -498,6 +498,50 @@ table {
 }
 
 tbody tr:hover {
-  background-color: #063342;
+  background-color: #107e8e;
   cursor: pointer;
+}
+
+.coin-setting-container .coin-setting {
+  display: flex;
+  flex-direction: row !important;
+}
+.coin-setting-container .coin-content {
+  width: 50%;
+}
+.coin-setting-container .coin-content:not(:last-child) {
+  border-right: 6px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, rgb(0, 40, 63) 0%, rgba(130, 16, 20, 0) 103%);
+}
+.coin-setting-container .coin-content:last-child {
+  padding-left: 3rem;
+}
+.coin-setting-container .coin-content .coin-setting-table {
+  width: 100%;
+  font-size: 1.5rem;
+}
+.coin-setting-container .coin-content .coin-setting-table thead tr th {
+  text-align: left;
+  padding: 1rem 0.5rem;
+}
+.coin-setting-container .coin-content .coin-setting-table tbody tr td {
+  padding: 0.8rem 0.5rem;
+}
+
+.view-btn {
+  background: rgb(12, 53, 68);
+  background: linear-gradient(180deg, rgb(12, 53, 68) 0%, rgb(48, 86, 102) 100%);
+  padding: 0.5rem 1rem;
+}
+
+.transparent-select {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.transparent-select option {
+  color: #002941;
 }/*# sourceMappingURL=main.css.map */
