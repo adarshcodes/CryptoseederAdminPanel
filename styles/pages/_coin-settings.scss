@@ -35,6 +35,11 @@
 	padding: 0.5rem 1rem;
 }
 
+.view-btn-new {
+	@include grad-2;
+	padding: 0.5rem 1rem;
+}
+
 .transparent-select {
 	background-color: transparent;
 	color: $color-primary-white;

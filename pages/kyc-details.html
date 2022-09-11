@@ -152,10 +152,52 @@
             </section>
             <!-- End of sidebar -->
             <div class="dashboard">
-                <section class="users-data user-details">
-                    <h1 class="heading-user-data">
-                        KYC Details
-                    </h1>
+                <section class="users-data" id="users-data">
+                    <h1 class="heading-user-data">Users</h1>
+
+                    <div class="users-data-head">
+                        <form class="user-input">
+                            <input type="text" class="search-input" placeholder="Search for User Name or email"
+                                required="">
+
+                            <button class="user-search-btn">Search</button>
+                            <input type="reset" class="input-reset">
+                        </form>
+
+                        <div class="kyc-filter-box">
+                            <label for="cars">KYC Filter</label>
+
+                            <select name="kyc" id="kyc-filter" class="kyc-dropdown">
+                                <option value="all">All</option>
+                                <option value="filter1">Filter 1</option>
+                                <option value="filter2">Filter 2
+                                </option>
+                                <option value="filter3">Filter 3</option>
+                            </select>
+                        </div>
+
+                        <button class="export-users-btn">
+                            <img src="../../images/export-icon.png" alt="export"> Export
+                        </button>
+                    </div>
+
+                    <div class="user-data-table">
+                        <h4 class="heading-table">Total Users : 105</h4>
+                        <h4 class="heading-table">KYC Verified Users : 5</h4>
+                        <h4 class="heading-table">KYC Non-verify Users : 105</h4>
+
+                        <div class="table-user">
+
+
+                            <div id="pageNavPosition" class="pager-nav"><span onclick="pager.prev();"
+                                    class="pg-normal pg-prev" style="display: none;">«</span><span id="pg1"
+                                    class="pg-selected" onclick="pager.showPage(1);">1</span><span id="pg2"
+                                    class="pg-normal pg-next" onclick="pager.showPage(2);">2</span><span id="pg3"
+                                    class="pg-normal pg-next" onclick="pager.showPage(3);">3</span><span id="pg4"
+                                    class="pg-normal pg-next" onclick="pager.showPage(4);">4</span><span
+                                    onclick="pager.next();" class="pg-normal">»</span></div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </main>

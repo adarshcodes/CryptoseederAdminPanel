@@ -304,7 +304,7 @@ table {
   background-color: transparent;
   background-image: none;
   text-align: left;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 }
 .users-data .user-data-table .table-user .user-table .user-table-body .table-data {
   padding: 2rem;
@@ -502,6 +502,11 @@ tbody tr:hover {
   cursor: pointer;
 }
 
+.heading-table {
+  display: inline-block;
+  margin-right: 4rem;
+}
+
 .coin-setting-container .coin-setting {
   display: flex;
   flex-direction: row !important;
@@ -530,6 +535,12 @@ tbody tr:hover {
 }
 
 .view-btn {
+  background: rgb(12, 53, 68);
+  background: linear-gradient(180deg, rgb(12, 53, 68) 0%, rgb(48, 86, 102) 100%);
+  padding: 0.5rem 1rem;
+}
+
+.view-btn-new {
   background: rgb(12, 53, 68);
   background: linear-gradient(180deg, rgb(12, 53, 68) 0%, rgb(48, 86, 102) 100%);
   padding: 0.5rem 1rem;
