@@ -1,0 +1,16 @@
+.header {
+	margin-bottom: 0.5rem;
+	position: fixed;
+	width: 100%;
+}
+
+.navbar {
+	@include flex-row-spacebetween;
+	background-color: $color-primary-blue;
+	padding: 1rem 2rem;
+
+	&__timer {
+		@include grad-1;
+		padding: 1rem 3rem;
+	}
+}

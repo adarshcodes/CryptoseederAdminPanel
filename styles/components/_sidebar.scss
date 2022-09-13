@@ -1,0 +1,39 @@
+.sidebar {
+	position: fixed;
+	background-color: $color-primary-blue;
+	width: 22rem;
+	height: 100vh;
+	margin-top: 8rem;
+	margin-right: 0.8rem;
+	font-size: 1.35rem;
+	padding: 2.5rem 1rem 5rem 1rem;
+
+	&-items {
+		margin: 0.7rem 0;
+		padding: 0rem 1rem;
+		transition: all 0.3s;
+
+		img {
+			width: 1.4rem;
+			margin-right: 0.5rem;
+		}
+
+		&:hover {
+			color: $color-secondary-yellow;
+		}
+	}
+
+	.gradient-items {
+		@include grad-1;
+		padding: 0.5rem 1rem;
+	}
+}
+
+.admin-email {
+	font-size: 1.3rem;
+	margin: 0rem 0 1rem 0;
+}
+
+.active {
+	color: $color-secondary-yellow !important;
+}

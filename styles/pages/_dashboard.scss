@@ -1,0 +1,111 @@
+.main-section {
+	display: flex;
+}
+
+.dashboard {
+	margin-top: 8.5rem;
+	margin-left: 22.5rem;
+	width: 100%;
+	height: 100%;
+
+	&-table-cards {
+		@include flex-row;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+
+	.table-card {
+		font-size: 1.5rem;
+		width: 34%;
+	}
+
+	.small-card {
+		width: 30%;
+	}
+
+	.table {
+		font-size: 1.5rem;
+		width: 100%;
+		text-align: center;
+	}
+
+	.card-head {
+		@include grad-1;
+		padding: 0.5rem 2rem;
+		text-align: center;
+	}
+
+	.card-head-white p {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.table-head {
+		@include grad-2;
+		padding: 0.3rem;
+		font-weight: 200;
+	}
+
+	.table-body tr {
+		background-color: $color-secondary-teal;
+		cursor: pointer;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: rgba($color-secondary-teal, 0.5);
+		}
+	}
+
+	.table-body td {
+		padding: 0.5rem;
+	}
+}
+
+.red-font {
+	color: $color-secondary-red;
+}
+
+.green-font {
+	color: $color-secondary-green;
+}
+
+.white-box {
+	background-color: $color-primary-white;
+	padding: 0.2rem 0.8rem;
+	font-size: 1.25rem;
+}
+
+.support-summary-container {
+	margin-top: 3rem;
+	padding-bottom: 3rem;
+	font-size: 1.5rem;
+}
+
+.summary-box {
+	width: 30%;
+	background-color: $color-secondary-teal;
+}
+
+.summary-head {
+	@include grad-1;
+	padding: 0.5rem 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.summary-card {
+	.summary-card-head {
+		@include grad-2;
+		padding: 0.5rem 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.summary-card-data {
+		padding: 0 1.5rem 1rem 1.5rem;
+
+		.summary-data {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 0.5rem;
+		}
+	}
+}

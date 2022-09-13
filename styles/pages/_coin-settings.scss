@@ -1,0 +1,53 @@
+.coin-setting-container {
+	.coin-setting {
+		display: flex;
+		flex-direction: row !important;
+	}
+	.coin-content {
+		width: 50%;
+
+		&:not(:last-child) {
+			@include border-right;
+		}
+
+		&:last-child {
+			padding-left: 3rem;
+		}
+
+		.coin-setting-table {
+			width: 100%;
+			font-size: 1.5rem;
+
+			thead tr th {
+				text-align: left;
+				padding: 1rem 0.5rem;
+			}
+
+			tbody tr td {
+				padding: 0.8rem 0.5rem;
+			}
+		}
+	}
+}
+
+.view-btn {
+	@include grad-2;
+	padding: 0.5rem 1rem;
+}
+
+.view-btn-new {
+	@include grad-2;
+	padding: 0.5rem 1rem;
+}
+
+.transparent-select {
+	background-color: transparent;
+	color: $color-primary-white;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	option {
+		color: $color-primary-blue;
+	}
+}
