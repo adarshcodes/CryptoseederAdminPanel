@@ -3,6 +3,7 @@
 		display: flex;
 		flex-direction: row !important;
 	}
+
 	.coin-content {
 		width: 50%;
 
@@ -25,6 +26,29 @@
 
 			tbody tr td {
 				padding: 0.8rem 0.5rem;
+			}
+		}
+	}
+
+	.commission-setting {
+		width: 100%;
+		height: 100%;
+	}
+
+	.commission-content {
+		width: 100%;
+
+		table {
+			width: 100%;
+			margin-top: 2rem;
+
+			thead tr th {
+				text-align: left;
+				padding: 1rem 1rem 2rem 1rem;
+			}
+
+			tbody tr td {
+				padding: 1rem;
 			}
 		}
 	}
