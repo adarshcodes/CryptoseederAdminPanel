@@ -154,6 +154,9 @@ table {
 .dashboard .table-body td {
   padding: 0.5rem;
 }
+.dashboard .table-data img {
+  width: 1rem;
+}
 
 .red-font {
   color: #ed1b23;
