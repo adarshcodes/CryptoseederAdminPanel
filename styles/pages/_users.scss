@@ -128,11 +128,9 @@
 					align-items: center;
 					margin-right: 0.5rem;
 					background: rgb(13, 145, 56);
-					background: linear-gradient(
-						0deg,
-						rgba(13, 145, 56, 1) 0%,
-						rgba(14, 104, 43, 1) 100%
-					);
+					background: linear-gradient(0deg,
+							rgba(13, 145, 56, 1) 0%,
+							rgba(14, 104, 43, 1) 100%);
 					padding: 0.5rem;
 					cursor: pointer;
 
@@ -144,11 +142,9 @@
 				.delete-btn {
 					background: rgb(237, 28, 36) !important;
 					background: rgb(237, 28, 36);
-					background: linear-gradient(
-						0deg,
-						rgba(237, 28, 36, 1) 0%,
-						rgba(130, 16, 20, 1) 100%
-					) !important;
+					background: linear-gradient(0deg,
+							rgba(237, 28, 36, 1) 0%,
+							rgba(130, 16, 20, 1) 100%) !important;
 				}
 			}
 		}
@@ -158,6 +154,7 @@
 .pager-nav {
 	margin: 6rem 0 0rem 0rem;
 }
+
 .pager-nav span {
 	display: inline-block;
 	padding: 4px 8px;
@@ -170,6 +167,7 @@
 	@include grad-2;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
+
 .pager-nav span:hover,
 .pager-nav .pg-selected {
 	background-color: #f9f9f9;

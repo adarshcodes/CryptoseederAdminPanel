@@ -56,49 +56,45 @@
 }
 
 @mixin grad-1 {
-	background-image: linear-gradient(
-		to bottom,
-		#093443,
-		#163d4c,
-		#204756,
-		#2b5060,
-		#355a6a
-	);
+	background-image: linear-gradient(to bottom,
+			#093443,
+			#163d4c,
+			#204756,
+			#2b5060,
+			#355a6a);
 }
 
 @mixin grad-2 {
 	background: rgb(12, 53, 68);
-	background: linear-gradient(
-		180deg,
-		rgba(12, 53, 68, 1) 0%,
-		rgba(48, 86, 102, 1) 100%
-	);
+	background: linear-gradient(180deg,
+			rgba(12, 53, 68, 1) 0%,
+			rgba(48, 86, 102, 1) 100%);
 }
 
 @mixin grad-3 {
 	background: rgb(0, 40, 63);
-	background: linear-gradient(
-		180deg,
-		rgba(0, 40, 63, 1) 0%,
-		rgba(130, 16, 20, 0) 100%
-	);
+	background: linear-gradient(180deg,
+			rgba(0, 40, 63, 1) 0%,
+			rgba(130, 16, 20, 0) 100%);
 }
 
 @mixin grad-4 {
 	background: rgb(0, 40, 63);
-	background: linear-gradient(
-		90deg,
-		rgba(0, 40, 63, 1) 0%,
-		rgba(130, 16, 20, 0) 100%
-	);
+	background: linear-gradient(90deg,
+			rgba(0, 40, 63, 1) 0%,
+			rgba(130, 16, 20, 0) 100%);
 }
 
 @mixin border-right {
 	border-right: 6px solid;
 	border-image-slice: 1;
-	border-image-source: linear-gradient(
-		180deg,
-		rgba(0, 40, 63, 1) 0%,
-		rgba(130, 16, 20, 0) 103%
-	);
+	border-image-source: linear-gradient(180deg,
+			rgba(0, 40, 63, 1) 0%,
+			rgba(130, 16, 20, 0) 103%);
+}
+
+@mixin border-right-grad {
+	border-right: 6px solid;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(180deg, rgb(0, 40, 63) 0%, rgba(130, 16, 20, 0) 103%);
 }
