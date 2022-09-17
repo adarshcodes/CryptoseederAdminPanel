@@ -54,7 +54,7 @@
 
                 <ul class="sidebar-list">
                     <li class="sidebar-items ">
-                        <a href="./coin-settings.html" class="active">
+                        <a href="./coin-settings.html">
                             <img src="../images/coin-setting-icon.png" alt="coin setting" />
                             Coin Settings
                         </a>
@@ -67,7 +67,8 @@
                     </li>
 
                     <li class="sidebar-items ">
-                        <a href="./kyc-details.html"><img src="../images/kyc-icon.png" alt="kyc submit" /> KYC Submit
+                        <a href="./kyc-details.html" class="active"><img src="../images/kyc-icon.png"
+                                alt="kyc submit" /> KYC Submit
                             (0)</a>
                     </li>
 
@@ -187,16 +188,1262 @@
                         <h4 class="heading-table">KYC Verified Users : 5</h4>
                         <h4 class="heading-table">KYC Non-verify Users : 105</h4>
 
-                        <div class="table-user">
+                        <div class="kyc-details-container">
+                            <table class="wp-list-table widefat striped posts" id="pager">
+                                <thead>
+                                    <tr>
+                                        <th>S.No</th>
+                                        <th>Joining Date</th>
+                                        <th>Full Name</th>
+                                        <th>DOB</th>
+                                        <th>Country</th>
+                                        <th>KYC Verify</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
 
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2022/08/012</td>
+                                        <td>Periyasamy</td>
+                                        <td>1986-03-07</td>
+                                        <td>UK</td>
+                                        <td>Approved</td>
+                                        <td>
+                                            <div class="view-btn kyc-view-btn">
+                                                <img src="../../images/view-icon.png" alt="view"> View
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="row-content" aria-colspan="100%">
+                                        <td colspan="100%">
+                                            <div class="kyc-container">
+                                                <div class="kyc-details">
+                                                    <ul class="kyc-list">
+                                                        <li class="kyc-items">
+                                                            <span>First Name</span>
+                                                            <span>C</span>
+                                                        </li>
 
-                            <div id="pageNavPosition" class="pager-nav"><span onclick="pager.prev();"
-                                    class="pg-normal pg-prev" style="display: none;">«</span><span id="pg1"
-                                    class="pg-selected" onclick="pager.showPage(1);">1</span><span id="pg2"
-                                    class="pg-normal pg-next" onclick="pager.showPage(2);">2</span><span id="pg3"
-                                    class="pg-normal pg-next" onclick="pager.showPage(3);">3</span><span id="pg4"
-                                    class="pg-normal pg-next" onclick="pager.showPage(4);">4</span><span
-                                    onclick="pager.next();" class="pg-normal">»</span></div>
+                                                        <li class="kyc-items">
+                                                            <span>Last Name</span>
+                                                            <span>Mohamood</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Date of Birth</span>
+                                                            <span>1986-03-07</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Address</span>
+                                                            <span>19/11 MR STREET <br>
+                                                                Pernambut -635810 <br>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>City</span>
+                                                            <span>Pernambut</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Country</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Zip Code</span>
+                                                            <span>635810</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Id Document Issued by</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Type</span>
+                                                            <span>Aadhaar Card</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Number</span>
+                                                            <span>875390867363</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Expiry Date</span>
+                                                            <span>2024-06-09</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Pan Number</span>
+                                                            <span>2024AM0609</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Back)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>PAN Card (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>Selﬁe with a Proof Document</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <a href="#">Click to Download</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="document-preview">
+                                                    <h2 class="heading-preview">Document Preview</h2>
+
+                                                    <p class="preview-text">ID Proof (Front)</p>
+
+                                                    <div class="id-card-preview"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2022/08/012</td>
+                                        <td>Periyasamy</td>
+                                        <td>1986-03-07</td>
+                                        <td>UK</td>
+                                        <td>Approved</td>
+                                        <td>
+                                            <div class="view-btn kyc-view-btn">
+                                                <img src="../../images/view-icon.png" alt="view"> View
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="row-content" aria-colspan="100%">
+                                        <td colspan="100%">
+                                            <div class="kyc-container">
+                                                <div class="kyc-details">
+                                                    <ul class="kyc-list">
+                                                        <li class="kyc-items">
+                                                            <span>First Name</span>
+                                                            <span>C</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Last Name</span>
+                                                            <span>Mohamood</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Date of Birth</span>
+                                                            <span>1986-03-07</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Address</span>
+                                                            <span>19/11 MR STREET <br>
+                                                                Pernambut -635810 <br>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>City</span>
+                                                            <span>Pernambut</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Country</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Zip Code</span>
+                                                            <span>635810</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Id Document Issued by</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Type</span>
+                                                            <span>Aadhaar Card</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Number</span>
+                                                            <span>875390867363</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Expiry Date</span>
+                                                            <span>2024-06-09</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Pan Number</span>
+                                                            <span>2024AM0609</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Back)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>PAN Card (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>Selﬁe with a Proof Document</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <a href="#">Click to Download</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="document-preview">
+                                                    <h2 class="heading-preview">Document Preview</h2>
+
+                                                    <p class="preview-text">ID Proof (Front)</p>
+
+                                                    <div class="id-card-preview"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2022/08/012</td>
+                                        <td>Periyasamy</td>
+                                        <td>1986-03-07</td>
+                                        <td>UK</td>
+                                        <td>Approved</td>
+                                        <td>
+                                            <div class="view-btn kyc-view-btn">
+                                                <img src="../../images/view-icon.png" alt="view"> View
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="row-content" aria-colspan="100%">
+                                        <td colspan="100%">
+                                            <div class="kyc-container">
+                                                <div class="kyc-details">
+                                                    <ul class="kyc-list">
+                                                        <li class="kyc-items">
+                                                            <span>First Name</span>
+                                                            <span>C</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Last Name</span>
+                                                            <span>Mohamood</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Date of Birth</span>
+                                                            <span>1986-03-07</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Address</span>
+                                                            <span>19/11 MR STREET <br>
+                                                                Pernambut -635810 <br>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>City</span>
+                                                            <span>Pernambut</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Country</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Zip Code</span>
+                                                            <span>635810</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Id Document Issued by</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Type</span>
+                                                            <span>Aadhaar Card</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Number</span>
+                                                            <span>875390867363</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Expiry Date</span>
+                                                            <span>2024-06-09</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Pan Number</span>
+                                                            <span>2024AM0609</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Back)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>PAN Card (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>Selﬁe with a Proof Document</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <a href="#">Click to Download</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="document-preview">
+                                                    <h2 class="heading-preview">Document Preview</h2>
+
+                                                    <p class="preview-text">ID Proof (Front)</p>
+
+                                                    <div class="id-card-preview"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2022/08/012</td>
+                                        <td>Periyasamy</td>
+                                        <td>1986-03-07</td>
+                                        <td>UK</td>
+                                        <td>Approved</td>
+                                        <td>
+                                            <div class="view-btn kyc-view-btn">
+                                                <img src="../../images/view-icon.png" alt="view"> View
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="row-content" aria-colspan="100%">
+                                        <td colspan="100%">
+                                            <div class="kyc-container">
+                                                <div class="kyc-details">
+                                                    <ul class="kyc-list">
+                                                        <li class="kyc-items">
+                                                            <span>First Name</span>
+                                                            <span>C</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Last Name</span>
+                                                            <span>Mohamood</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Date of Birth</span>
+                                                            <span>1986-03-07</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Address</span>
+                                                            <span>19/11 MR STREET <br>
+                                                                Pernambut -635810 <br>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>City</span>
+                                                            <span>Pernambut</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Country</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Zip Code</span>
+                                                            <span>635810</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Id Document Issued by</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Type</span>
+                                                            <span>Aadhaar Card</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Number</span>
+                                                            <span>875390867363</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Expiry Date</span>
+                                                            <span>2024-06-09</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Pan Number</span>
+                                                            <span>2024AM0609</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Back)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>PAN Card (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>Selﬁe with a Proof Document</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <a href="#">Click to Download</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="document-preview">
+                                                    <h2 class="heading-preview">Document Preview</h2>
+
+                                                    <p class="preview-text">ID Proof (Front)</p>
+
+                                                    <div class="id-card-preview"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2022/08/012</td>
+                                        <td>Periyasamy</td>
+                                        <td>1986-03-07</td>
+                                        <td>UK</td>
+                                        <td>Approved</td>
+                                        <td>
+                                            <div class="view-btn kyc-view-btn">
+                                                <img src="../../images/view-icon.png" alt="view"> View
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="row-content" aria-colspan="100%">
+                                        <td colspan="100%">
+                                            <div class="kyc-container">
+                                                <div class="kyc-details">
+                                                    <ul class="kyc-list">
+                                                        <li class="kyc-items">
+                                                            <span>First Name</span>
+                                                            <span>C</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Last Name</span>
+                                                            <span>Mohamood</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Date of Birth</span>
+                                                            <span>1986-03-07</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Address</span>
+                                                            <span>19/11 MR STREET <br>
+                                                                Pernambut -635810 <br>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>City</span>
+                                                            <span>Pernambut</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Country</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Zip Code</span>
+                                                            <span>635810</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Id Document Issued by</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Type</span>
+                                                            <span>Aadhaar Card</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Number</span>
+                                                            <span>875390867363</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Expiry Date</span>
+                                                            <span>2024-06-09</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Pan Number</span>
+                                                            <span>2024AM0609</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Back)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>PAN Card (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>Selﬁe with a Proof Document</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <a href="#">Click to Download</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="document-preview">
+                                                    <h2 class="heading-preview">Document Preview</h2>
+
+                                                    <p class="preview-text">ID Proof (Front)</p>
+
+                                                    <div class="id-card-preview"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2022/08/012</td>
+                                        <td>Periyasamy</td>
+                                        <td>1986-03-07</td>
+                                        <td>UK</td>
+                                        <td>Approved</td>
+                                        <td>
+                                            <div class="view-btn kyc-view-btn">
+                                                <img src="../../images/view-icon.png" alt="view"> View
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="row-content" aria-colspan="100%">
+                                        <td colspan="100%">
+                                            <div class="kyc-container">
+                                                <div class="kyc-details">
+                                                    <ul class="kyc-list">
+                                                        <li class="kyc-items">
+                                                            <span>First Name</span>
+                                                            <span>C</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Last Name</span>
+                                                            <span>Mohamood</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Date of Birth</span>
+                                                            <span>1986-03-07</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Address</span>
+                                                            <span>19/11 MR STREET <br>
+                                                                Pernambut -635810 <br>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>City</span>
+                                                            <span>Pernambut</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Country</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Zip Code</span>
+                                                            <span>635810</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Id Document Issued by</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Type</span>
+                                                            <span>Aadhaar Card</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Number</span>
+                                                            <span>875390867363</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Expiry Date</span>
+                                                            <span>2024-06-09</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Pan Number</span>
+                                                            <span>2024AM0609</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Back)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>PAN Card (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>Selﬁe with a Proof Document</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <a href="#">Click to Download</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="document-preview">
+                                                    <h2 class="heading-preview">Document Preview</h2>
+
+                                                    <p class="preview-text">ID Proof (Front)</p>
+
+                                                    <div class="id-card-preview"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2022/08/012</td>
+                                        <td>Periyasamy</td>
+                                        <td>1986-03-07</td>
+                                        <td>UK</td>
+                                        <td>Approved</td>
+                                        <td>
+                                            <div class="view-btn kyc-view-btn">
+                                                <img src="../../images/view-icon.png" alt="view"> View
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="row-content" aria-colspan="100%">
+                                        <td colspan="100%">
+                                            <div class="kyc-container">
+                                                <div class="kyc-details">
+                                                    <ul class="kyc-list">
+                                                        <li class="kyc-items">
+                                                            <span>First Name</span>
+                                                            <span>C</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Last Name</span>
+                                                            <span>Mohamood</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Date of Birth</span>
+                                                            <span>1986-03-07</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Address</span>
+                                                            <span>19/11 MR STREET <br>
+                                                                Pernambut -635810 <br>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>City</span>
+                                                            <span>Pernambut</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Country</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Zip Code</span>
+                                                            <span>635810</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Id Document Issued by</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Type</span>
+                                                            <span>Aadhaar Card</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Number</span>
+                                                            <span>875390867363</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Expiry Date</span>
+                                                            <span>2024-06-09</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Pan Number</span>
+                                                            <span>2024AM0609</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Back)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>PAN Card (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>Selﬁe with a Proof Document</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <a href="#">Click to Download</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="document-preview">
+                                                    <h2 class="heading-preview">Document Preview</h2>
+
+                                                    <p class="preview-text">ID Proof (Front)</p>
+
+                                                    <div class="id-card-preview"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2022/08/012</td>
+                                        <td>Periyasamy</td>
+                                        <td>1986-03-07</td>
+                                        <td>UK</td>
+                                        <td>Approved</td>
+                                        <td>
+                                            <div class="view-btn kyc-view-btn">
+                                                <img src="../../images/view-icon.png" alt="view"> View
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="row-content" aria-colspan="100%">
+                                        <td colspan="100%">
+                                            <div class="kyc-container">
+                                                <div class="kyc-details">
+                                                    <ul class="kyc-list">
+                                                        <li class="kyc-items">
+                                                            <span>First Name</span>
+                                                            <span>C</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Last Name</span>
+                                                            <span>Mohamood</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Date of Birth</span>
+                                                            <span>1986-03-07</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Address</span>
+                                                            <span>19/11 MR STREET <br>
+                                                                Pernambut -635810 <br>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>City</span>
+                                                            <span>Pernambut</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Country</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Zip Code</span>
+                                                            <span>635810</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Id Document Issued by</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Type</span>
+                                                            <span>Aadhaar Card</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Number</span>
+                                                            <span>875390867363</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Expiry Date</span>
+                                                            <span>2024-06-09</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Pan Number</span>
+                                                            <span>2024AM0609</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Back)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>PAN Card (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>Selﬁe with a Proof Document</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <a href="#">Click to Download</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="document-preview">
+                                                    <h2 class="heading-preview">Document Preview</h2>
+
+                                                    <p class="preview-text">ID Proof (Front)</p>
+
+                                                    <div class="id-card-preview"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2022/08/012</td>
+                                        <td>Periyasamy</td>
+                                        <td>1986-03-07</td>
+                                        <td>UK</td>
+                                        <td>Approved</td>
+                                        <td>
+                                            <div class="view-btn kyc-view-btn">
+                                                <img src="../../images/view-icon.png" alt="view"> View
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="row-content" aria-colspan="100%">
+                                        <td colspan="100%">
+                                            <div class="kyc-container">
+                                                <div class="kyc-details">
+                                                    <ul class="kyc-list">
+                                                        <li class="kyc-items">
+                                                            <span>First Name</span>
+                                                            <span>C</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Last Name</span>
+                                                            <span>Mohamood</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Date of Birth</span>
+                                                            <span>1986-03-07</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Address</span>
+                                                            <span>19/11 MR STREET <br>
+                                                                Pernambut -635810 <br>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>City</span>
+                                                            <span>Pernambut</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Country</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Zip Code</span>
+                                                            <span>635810</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Id Document Issued by</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Type</span>
+                                                            <span>Aadhaar Card</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Number</span>
+                                                            <span>875390867363</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Expiry Date</span>
+                                                            <span>2024-06-09</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Pan Number</span>
+                                                            <span>2024AM0609</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Back)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>PAN Card (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>Selﬁe with a Proof Document</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <a href="#">Click to Download</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="document-preview">
+                                                    <h2 class="heading-preview">Document Preview</h2>
+
+                                                    <p class="preview-text">ID Proof (Front)</p>
+
+                                                    <div class="id-card-preview"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2022/08/012</td>
+                                        <td>Periyasamy</td>
+                                        <td>1986-03-07</td>
+                                        <td>UK</td>
+                                        <td>Approved</td>
+                                        <td>
+                                            <div class="view-btn kyc-view-btn">
+                                                <img src="../../images/view-icon.png" alt="view"> View
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="row-content" aria-colspan="100%">
+                                        <td colspan="100%">
+                                            <div class="kyc-container">
+                                                <div class="kyc-details">
+                                                    <ul class="kyc-list">
+                                                        <li class="kyc-items">
+                                                            <span>First Name</span>
+                                                            <span>C</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Last Name</span>
+                                                            <span>Mohamood</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Date of Birth</span>
+                                                            <span>1986-03-07</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Address</span>
+                                                            <span>19/11 MR STREET <br>
+                                                                Pernambut -635810 <br>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>City</span>
+                                                            <span>Pernambut</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Country</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Zip Code</span>
+                                                            <span>635810</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Id Document Issued by</span>
+                                                            <span>India</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Type</span>
+                                                            <span>Aadhaar Card</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Number</span>
+                                                            <span>875390867363</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>ID Expiry Date</span>
+                                                            <span>2024-06-09</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span>Pan Number</span>
+                                                            <span>2024AM0609</span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                            <span class="id-proof">
+                                                                <p>ID Proof (Back)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>PAN Card (Front)</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <span class="id-proof">
+                                                                <p>Selﬁe with a Proof Document</p>
+                                                                <div class="id-card"></div>
+                                                            </span>
+                                                        </li>
+
+                                                        <li class="kyc-items">
+                                                            <a href="#">Click to Download</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="document-preview">
+                                                    <h2 class="heading-preview">Document Preview</h2>
+
+                                                    <p class="preview-text">ID Proof (Front)</p>
+
+                                                    <div class="id-card-preview"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div id="pageNavPosition" class="pager-nav"></div>
                         </div>
                     </div>
                 </section>
@@ -205,7 +1452,8 @@
         <!-- End of Main -->
     </div>
 
-    <script src="../scripts/pages.js" defer></script>
+    <script src="../scripts/pages.js"></script>
+    <script src="../scripts/index.js"></script>
 </body>
 
 </html>
