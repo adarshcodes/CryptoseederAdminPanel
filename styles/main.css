@@ -576,4 +576,159 @@ tbody tr:hover {
 }
 .transparent-select option {
   color: #002941;
+}
+
+.trade-history-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trade-history-head .trade-searchbar {
+  width: 50%;
+}
+.trade-history-head .trade-searchbar .search-input {
+  width: 70%;
+  padding: 0.5rem 1rem;
+  border: transparent;
+  outline: none;
+  background-color: #0D7B8A;
+  color: #ffffff;
+}
+.trade-history-head .trade-searchbar .search-btn,
+.trade-history-head .trade-searchbar .reset-btn {
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  background: rgb(12, 53, 68);
+  background: linear-gradient(180deg, rgb(12, 53, 68) 0%, rgb(48, 86, 102) 100%);
+  cursor: pointer;
+  color: #ffffff;
+}
+.trade-history-head .filter {
+  display: flex;
+  gap: 1rem;
+}
+.trade-history-head .filter-btn {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #0D7B8A;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.trade-history-head .filter-btn:hover {
+  background-color: #0a3140;
+}
+.trade-history-head .filter-btn:focus {
+  background-color: #0a3140;
+}
+
+.trade-history-table {
+  margin-top: 3rem;
+  width: 100%;
+}
+.trade-history-table table {
+  width: 100%;
+  font-size: 1.4rem;
+}
+.trade-history-table table thead tr th {
+  padding: 1rem 0.5rem;
+  text-align: center;
+}
+.trade-history-table table tbody tr td {
+  padding: 1rem 0.5rem;
+  text-align: center;
+}
+.trade-history-table .table-data-btn {
+  display: flex;
+  gap: 0.5rem;
+}
+.trade-history-table .table-data-btn .view-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trade-history-table .table-data-btn .view-btn a {
+  display: flex;
+  gap: 0.5rem;
+}
+.trade-history-table .table-data-btn .view-btn img {
+  width: 1rem;
+  height: 1.5rem;
+}
+
+.trade-view-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+  font-size: 1.35rem;
+}
+.trade-view-container .fee-wallet {
+  width: 50%;
+}
+.trade-view-container .fee-wallet .head-trade-view {
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+.trade-view-container .fee-wallet .head-view-active {
+  border-bottom: 2px solid #FCB03F;
+}
+.trade-view-container .fee-wallet .fee-wallet-content {
+  display: flex;
+  gap: 3rem;
+}
+.trade-view-container .fee-wallet .fee-wallet-content .coins-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-right: 1px solid #0B3241;
+  padding-right: 1rem;
+  height: 100%;
+}
+.trade-view-container .fee-wallet .fee-wallet-content .fee-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-right: 6px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, rgb(0, 40, 63) 0%, rgba(130, 16, 20, 0) 103%);
+  padding-right: 1rem;
+}
+.trade-view-container .fee-wallet .fee-wallet-content .fee-form .input-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.trade-view-container .fee-wallet .fee-wallet-content .fee-form .input-row input {
+  width: 70%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px #1F858E;
+  color: #ffffff;
+}
+.trade-view-container .fee-wallet .fee-wallet-content .fee-form .submit-btn {
+  align-self: flex-start;
+  margin-top: 1.5rem;
+  background-image: linear-gradient(to bottom, #093443, #163d4c, #204756, #2b5060, #355a6a);
+  padding: 0.8rem 3rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+.trade-view-container .fee-wallet .txn-table {
+  padding: 3rem;
+  overflow-x: auto;
+}
+.trade-view-container .fee-wallet .txn-table table {
+  width: 100%;
+}
+.trade-view-container .fee-wallet .txn-table table thead tr th,
+.trade-view-container .fee-wallet .txn-table table tbody tr td {
+  text-align: center;
+  padding: 1rem 0.5rem;
 }/*# sourceMappingURL=main.css.map */
