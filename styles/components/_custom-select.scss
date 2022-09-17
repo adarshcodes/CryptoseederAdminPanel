@@ -9,3 +9,18 @@
         color: $color-primary-blue;
     }
 }
+
+.custom-select {
+    background: rgb(12, 53, 68);
+    background: linear-gradient(180deg, rgb(12, 53, 68) 0%, rgb(48, 86, 102) 100%);
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    outline: none;
+    border: none;
+
+    option {
+        background-color: #0a3140;
+        border-radius: 0;
+    }
+}

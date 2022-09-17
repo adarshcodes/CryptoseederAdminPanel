@@ -160,16 +160,38 @@
                     <h1 class="heading-user-data">Trade History</h1>
 
                     <div class="trade-history-head">
-                        <form class="trade-searchbar">
-                            <input type="text" class="search-input" required>
-                            <button class="search-btn">Search</button>
-                            <input type="reset" class="reset-btn">
-                        </form>
+                        <div class="trade-select-type">
+                            <div class="custom-select-container">
+                                <select name="type" id="type-filter" class="custom-select">
+                                    <option value="all">All</option>
+                                    <option value="limit">Limit</option>
+                                    <option value="Market">Market
+                                    </option>
+                                    <option value="Instant">Instant</option>
+                                </select>
+                            </div>
 
-                        <div class="filter">
-                            <button class="filter-btn">All</button>
-                            <button class="filter-btn">Buy</button>
-                            <button class="filter-btn">Sell</button>
+                            <div class=" custom-select-container">
+                                <select name="buy-sell" id="trade-type-filter" class="custom-select">
+                                    <option value="Buy">Buy</option>
+                                    <option value="Sell">Sell</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="trade-select-type">
+                            <div class="custom-select-container">
+                                <select name="asset" id="asset-filter" class="custom-select">
+                                    <option value="BTC/INR">BTC/INR</option>
+                                    <option value="ETH/INR">ETH/INR</option>
+                                    <option value="USDT/INR">USDT/INR</option>
+                                    <option value="TRX/INR">TRX/INR</option>
+                                    <option value="BTC/USDT">BTC/USDT</option>
+                                    <option value="ETH/USDT">ETH/USDT</option>
+                                    <option value="TRX/USDT">TRX/USDT</option>
+                                    <option value="BTC/ETH">BTC/ETH</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
 
@@ -184,17 +206,741 @@
                                     <th>
                                         Name/Email ID
                                     </th>
-                                    <th>Txn ID</th>
-                                    <th>Type</th>
-                                    <th>Asset</th>
-                                    <th>Live Price</th>
-                                    <th>Enter Amount</th>
+                                    <th>Username</th>
+                                    <th>Trade Pair</th>
+                                    <th>Trade Type</th>
+                                    <th>Order Type</th>
+                                    <th>Price</th>
+                                    <th>Amount</th>
+                                    <th>Remaining</th>
+                                    <th>Cancelled</th>
                                     <th>Total</th>
+                                    <th>Trade Fee</th>
                                     <th>Status</th>
-                                    <th>Action</th>
                                 </tr>
                             </thead>
 
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <span>15-08-2022</span> <br>
+                                        <span>0:34:16</span>
+                                    </td>
+                                    <td>
+                                        <span>KIRUBAKARAN</span> <br>
+                                        <span>kirubaepd@gmail.com</span>
+                                    </td>
+                                    <td>
+                                        KIRUBAKARAN
+                                    </td>
+                                    <td>
+                                        BTC/INR
+                                    </td>
+                                    <td>
+                                        Limit
+                                    </td>
+                                    <td>
+                                        Sell
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.00098
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.001
+                                    </td>
+                                    <td>
+                                        Completed
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <span>15-08-2022</span> <br>
+                                        <span>0:34:16</span>
+                                    </td>
+                                    <td>
+                                        <span>KIRUBAKARAN</span> <br>
+                                        <span>kirubaepd@gmail.com</span>
+                                    </td>
+                                    <td>
+                                        KIRUBAKARAN
+                                    </td>
+                                    <td>
+                                        BTC/INR
+                                    </td>
+                                    <td>
+                                        Limit
+                                    </td>
+                                    <td>
+                                        Sell
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.00098
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.001
+                                    </td>
+                                    <td>
+                                        Completed
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <span>15-08-2022</span> <br>
+                                        <span>0:34:16</span>
+                                    </td>
+                                    <td>
+                                        <span>KIRUBAKARAN</span> <br>
+                                        <span>kirubaepd@gmail.com</span>
+                                    </td>
+                                    <td>
+                                        KIRUBAKARAN
+                                    </td>
+                                    <td>
+                                        BTC/INR
+                                    </td>
+                                    <td>
+                                        Limit
+                                    </td>
+                                    <td>
+                                        Sell
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.00098
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.001
+                                    </td>
+                                    <td>
+                                        Completed
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <span>15-08-2022</span> <br>
+                                        <span>0:34:16</span>
+                                    </td>
+                                    <td>
+                                        <span>KIRUBAKARAN</span> <br>
+                                        <span>kirubaepd@gmail.com</span>
+                                    </td>
+                                    <td>
+                                        KIRUBAKARAN
+                                    </td>
+                                    <td>
+                                        BTC/INR
+                                    </td>
+                                    <td>
+                                        Limit
+                                    </td>
+                                    <td>
+                                        Sell
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.00098
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.001
+                                    </td>
+                                    <td>
+                                        Completed
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <span>15-08-2022</span> <br>
+                                        <span>0:34:16</span>
+                                    </td>
+                                    <td>
+                                        <span>KIRUBAKARAN</span> <br>
+                                        <span>kirubaepd@gmail.com</span>
+                                    </td>
+                                    <td>
+                                        KIRUBAKARAN
+                                    </td>
+                                    <td>
+                                        BTC/INR
+                                    </td>
+                                    <td>
+                                        Limit
+                                    </td>
+                                    <td>
+                                        Sell
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.00098
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.001
+                                    </td>
+                                    <td>
+                                        Completed
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <span>15-08-2022</span> <br>
+                                        <span>0:34:16</span>
+                                    </td>
+                                    <td>
+                                        <span>KIRUBAKARAN</span> <br>
+                                        <span>kirubaepd@gmail.com</span>
+                                    </td>
+                                    <td>
+                                        KIRUBAKARAN
+                                    </td>
+                                    <td>
+                                        BTC/INR
+                                    </td>
+                                    <td>
+                                        Limit
+                                    </td>
+                                    <td>
+                                        Sell
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.00098
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.001
+                                    </td>
+                                    <td>
+                                        Completed
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <span>15-08-2022</span> <br>
+                                        <span>0:34:16</span>
+                                    </td>
+                                    <td>
+                                        <span>KIRUBAKARAN</span> <br>
+                                        <span>kirubaepd@gmail.com</span>
+                                    </td>
+                                    <td>
+                                        KIRUBAKARAN
+                                    </td>
+                                    <td>
+                                        BTC/INR
+                                    </td>
+                                    <td>
+                                        Limit
+                                    </td>
+                                    <td>
+                                        Sell
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.00098
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.001
+                                    </td>
+                                    <td>
+                                        Completed
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <span>15-08-2022</span> <br>
+                                        <span>0:34:16</span>
+                                    </td>
+                                    <td>
+                                        <span>KIRUBAKARAN</span> <br>
+                                        <span>kirubaepd@gmail.com</span>
+                                    </td>
+                                    <td>
+                                        KIRUBAKARAN
+                                    </td>
+                                    <td>
+                                        BTC/INR
+                                    </td>
+                                    <td>
+                                        Limit
+                                    </td>
+                                    <td>
+                                        Sell
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.00098
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.001
+                                    </td>
+                                    <td>
+                                        Completed
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <span>15-08-2022</span> <br>
+                                        <span>0:34:16</span>
+                                    </td>
+                                    <td>
+                                        <span>KIRUBAKARAN</span> <br>
+                                        <span>kirubaepd@gmail.com</span>
+                                    </td>
+                                    <td>
+                                        KIRUBAKARAN
+                                    </td>
+                                    <td>
+                                        BTC/INR
+                                    </td>
+                                    <td>
+                                        Limit
+                                    </td>
+                                    <td>
+                                        Sell
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.00098
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.001
+                                    </td>
+                                    <td>
+                                        Completed
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <span>15-08-2022</span> <br>
+                                        <span>0:34:16</span>
+                                    </td>
+                                    <td>
+                                        <span>KIRUBAKARAN</span> <br>
+                                        <span>kirubaepd@gmail.com</span>
+                                    </td>
+                                    <td>
+                                        KIRUBAKARAN
+                                    </td>
+                                    <td>
+                                        BTC/INR
+                                    </td>
+                                    <td>
+                                        Limit
+                                    </td>
+                                    <td>
+                                        Sell
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.00098
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.001
+                                    </td>
+                                    <td>
+                                        Completed
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <span>15-08-2022</span> <br>
+                                        <span>0:34:16</span>
+                                    </td>
+                                    <td>
+                                        <span>KIRUBAKARAN</span> <br>
+                                        <span>kirubaepd@gmail.com</span>
+                                    </td>
+                                    <td>
+                                        KIRUBAKARAN
+                                    </td>
+                                    <td>
+                                        BTC/INR
+                                    </td>
+                                    <td>
+                                        Limit
+                                    </td>
+                                    <td>
+                                        Sell
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.00098
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.001
+                                    </td>
+                                    <td>
+                                        Completed
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <span>15-08-2022</span> <br>
+                                        <span>0:34:16</span>
+                                    </td>
+                                    <td>
+                                        <span>KIRUBAKARAN</span> <br>
+                                        <span>kirubaepd@gmail.com</span>
+                                    </td>
+                                    <td>
+                                        KIRUBAKARAN
+                                    </td>
+                                    <td>
+                                        BTC/INR
+                                    </td>
+                                    <td>
+                                        Limit
+                                    </td>
+                                    <td>
+                                        Sell
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.00098
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.001
+                                    </td>
+                                    <td>
+                                        Completed
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <span>15-08-2022</span> <br>
+                                        <span>0:34:16</span>
+                                    </td>
+                                    <td>
+                                        <span>KIRUBAKARAN</span> <br>
+                                        <span>kirubaepd@gmail.com</span>
+                                    </td>
+                                    <td>
+                                        KIRUBAKARAN
+                                    </td>
+                                    <td>
+                                        BTC/INR
+                                    </td>
+                                    <td>
+                                        Limit
+                                    </td>
+                                    <td>
+                                        Sell
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.00098
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.001
+                                    </td>
+                                    <td>
+                                        Completed
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <span>15-08-2022</span> <br>
+                                        <span>0:34:16</span>
+                                    </td>
+                                    <td>
+                                        <span>KIRUBAKARAN</span> <br>
+                                        <span>kirubaepd@gmail.com</span>
+                                    </td>
+                                    <td>
+                                        KIRUBAKARAN
+                                    </td>
+                                    <td>
+                                        BTC/INR
+                                    </td>
+                                    <td>
+                                        Limit
+                                    </td>
+                                    <td>
+                                        Sell
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.00098
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.001
+                                    </td>
+                                    <td>
+                                        Completed
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <span>15-08-2022</span> <br>
+                                        <span>0:34:16</span>
+                                    </td>
+                                    <td>
+                                        <span>KIRUBAKARAN</span> <br>
+                                        <span>kirubaepd@gmail.com</span>
+                                    </td>
+                                    <td>
+                                        KIRUBAKARAN
+                                    </td>
+                                    <td>
+                                        BTC/INR
+                                    </td>
+                                    <td>
+                                        Limit
+                                    </td>
+                                    <td>
+                                        Sell
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.00098
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.001
+                                    </td>
+                                    <td>
+                                        Completed
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <span>15-08-2022</span> <br>
+                                        <span>0:34:16</span>
+                                    </td>
+                                    <td>
+                                        <span>KIRUBAKARAN</span> <br>
+                                        <span>kirubaepd@gmail.com</span>
+                                    </td>
+                                    <td>
+                                        KIRUBAKARAN
+                                    </td>
+                                    <td>
+                                        BTC/INR
+                                    </td>
+                                    <td>
+                                        Limit
+                                    </td>
+                                    <td>
+                                        Sell
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.00098
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        10000
+                                    </td>
+                                    <td>
+                                        0.001
+                                    </td>
+                                    <td>
+                                        Completed
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
 
                         <div id="pageNavPosition" class="pager-nav"></div>

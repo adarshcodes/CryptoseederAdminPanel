@@ -1,0 +1,24 @@
+.trade-history-head {
+    @include flex-row-spacebetween;
+
+    .trade-select-type {
+        @include flex-row;
+        gap: 3rem;
+    }
+}
+
+.trade-history-table {
+    margin-top: 3rem;
+    overflow-x: auto;
+
+    table {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    table thead tr th,
+    table tbody tr td {
+        padding: 1rem 0.5rem;
+        text-align: left;
+    }
+}
