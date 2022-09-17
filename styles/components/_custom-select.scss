@@ -1,0 +1,11 @@
+.transparent-select {
+    background-color: transparent;
+    color: $color-primary-white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    option {
+        color: $color-primary-blue;
+    }
+}
