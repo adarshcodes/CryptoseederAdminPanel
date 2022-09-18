@@ -76,7 +76,7 @@ table {
   margin-top: 8rem;
   margin-right: 0.8rem;
   font-size: 1.35rem;
-  padding: 2.5rem 1rem 5rem 1rem;
+  padding: 2.5rem 1rem 10rem 1rem;
   overflow-y: auto;
 }
 .sidebar::-webkit-scrollbar-track {
