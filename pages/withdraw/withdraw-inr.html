@@ -73,7 +73,8 @@
                     </li>
 
                     <li class="sidebar-items ">
-                        <a href="#" class="active"><img src="../../images/user-txn-icon.png" alt="User Transaction" />
+                        <a href="../user-txn/user-txn.html"><img src="../../images/user-txn-icon.png"
+                                alt="User Transaction" />
                             User Transaction</a>
                     </li>
 
@@ -84,7 +85,8 @@
                     </li>
 
                     <li class="sidebar-items ">
-                        <a href="#"><img src="../../images/deposite-icon.png" alt="Deposite" />
+                        <a href="../deposite/deposite-btc.html"><img src="../../images/deposite-icon.png"
+                                alt="Deposite" />
                             Deposite <i class="fa-solid fa-angle-down arrow-down"></i></a>
 
                         <ul class="sidebar-drop-list">
@@ -129,7 +131,8 @@
                     </li>
 
                     <li class="sidebar-items ">
-                        <a href="#"><img src="../../images/withdraw-icon.png" alt="Withdraw" />
+                        <a href="./withdraw-btc.html" class="active"><img src="../../images/withdraw-icon.png"
+                                alt="Withdraw" />
                             Withdraw <i class="fa-solid fa-angle-down arrow-down"></i></a>
 
                         <ul class="sidebar-drop-list">
@@ -236,8 +239,231 @@
             <!-- End of sidebar -->
 
             <div class="dashboard">
-                <section class="users-data" id="users-data">
-                    <h1 class="heading-user-data">INR DEPo</h1>
+                <section class="users-data deposite-container" id="users-data">
+                    <div class="deposite-head">
+                        <h1 class="heading-user-data">INR Withdraw History</h1>
+
+                        <div class="filter">
+                            <button class="filter-btn">Pending</button>
+                            <button class="filter-btn">Approved</button>
+                            <button class="filter-btn">Rejected</button>
+                        </div>
+                    </div>
+
+                    <div class="deposite-table">
+                        <table class="txn-table wp-list-table widefat striped posts" id="pager">
+                            <thead>
+                                <tr>
+                                    <th>S.No.</th>
+                                    <th>
+                                        Date/Time
+                                    </th>
+                                    <th>Username</th>
+                                    <th>Requested Withdraw Amount (INR)</th>
+                                    <th>Withdraw Fee (INR)</th>
+                                    <th>Total Deducted Amount (INR)</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>0.10000000</td>
+                                    <td>0.00000001</td>
+                                    <td>0.10000000</td>
+                                    <td>Approved by Admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./withdraw-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>0.10000000</td>
+                                    <td>0.00000001</td>
+                                    <td>0.10000000</td>
+                                    <td>Approved by Admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./withdraw-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>0.10000000</td>
+                                    <td>0.00000001</td>
+                                    <td>0.10000000</td>
+                                    <td>Approved by Admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./withdraw-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>0.10000000</td>
+                                    <td>0.00000001</td>
+                                    <td>0.10000000</td>
+                                    <td>Approved by Admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./withdraw-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>0.10000000</td>
+                                    <td>0.00000001</td>
+                                    <td>0.10000000</td>
+                                    <td>Approved by Admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./withdraw-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>0.10000000</td>
+                                    <td>0.00000001</td>
+                                    <td>0.10000000</td>
+                                    <td>Approved by Admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./withdraw-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>0.10000000</td>
+                                    <td>0.00000001</td>
+                                    <td>0.10000000</td>
+                                    <td>Approved by Admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./withdraw-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>0.10000000</td>
+                                    <td>0.00000001</td>
+                                    <td>0.10000000</td>
+                                    <td>Approved by Admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./withdraw-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>0.10000000</td>
+                                    <td>0.00000001</td>
+                                    <td>0.10000000</td>
+                                    <td>Approved by Admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./withdraw-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>0.10000000</td>
+                                    <td>0.00000001</td>
+                                    <td>0.10000000</td>
+                                    <td>Approved by Admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./withdraw-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>0.10000000</td>
+                                    <td>0.00000001</td>
+                                    <td>0.10000000</td>
+                                    <td>Approved by Admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./withdraw-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>0.10000000</td>
+                                    <td>0.00000001</td>
+                                    <td>0.10000000</td>
+                                    <td>Approved by Admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./withdraw-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div id="pageNavPosition" class="pager-nav"></div>
+                    </div>
                 </section>
             </div>
         </main>
