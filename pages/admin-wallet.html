@@ -1,0 +1,671 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Wallet | Cryptoseeders</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Source+Sans+Pro:wght@300;400;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/a0bc19c04a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Header -->
+        <header class="header">
+            <nav class="navbar">
+                <a href="../index.html"><img src="../images/logo-exchange.png" alt="exchange logo"
+                        class="navbar__logo" /></a>
+
+                <div class="navbar__timer">18:05:23</div>
+            </nav>
+        </header>
+        <!-- End of Header -->
+
+        <!-- Main -->
+        <main class="main-section">
+            <!-- Sidebar -->
+            <section class="sidebar">
+                <ul class="sidebar-list">
+                    <li class="admin-email"></li>
+                    <a href="mailto: admin@cryptoseeders.in">admin@cryptoseeders.in</a>
+                    </li>
+
+                    <li class="sidebar-items gradient-items">
+                        <a href="../index.html">
+                            <img src="../images/dashboard-icon.png" alt="dashboard" />
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="sidebar-items gradient-items">
+                        <a href="./users/users.html"><img src="../images/users-icon.png" alt="Users" />
+                            Users</a>
+                    </li>
+                </ul>
+
+                <ul class="sidebar-list">
+                    <li class="sidebar-items ">
+                        <a href="./coin-settings.html">
+                            <img src="../images/coin-setting-icon.png" alt="coin setting" />
+                            Coin Settings
+                        </a>
+                    </li>
+
+                    <li class="sidebar-items ">
+                        <a href="./trade-history/trade-history.html"><img src="../images/trade-history-icon.png"
+                                alt="trade History" />
+                            Trade History</a>
+                    </li>
+
+                    <li class="sidebar-items ">
+                        <a href="./kyc-details.html"><img src="../images/kyc-icon.png" alt="kyc submit" /> KYC Submit
+                            (0)</a>
+                    </li>
+
+                    <li class="sidebar-items ">
+                        <a href="./user-txn/user-txn.html"><img src="../images/user-txn-icon.png"
+                                alt="User Transaction" />
+                            User Transaction</a>
+                    </li>
+
+                    <li class="sidebar-items ">
+                        <a href="./admin-wallet.html" class="active"><img src="../images/admin-wallet-icon.png"
+                                alt="Admin Wallet" />
+                            Admin Wallet</a>
+                    </li>
+
+                    <li class="sidebar-items ">
+                        <a href="#"><img src="../images/deposite-icon.png" alt="Deposite" />
+                            Deposite</a>
+                    </li>
+
+                    <li class="sidebar-items ">
+                        <a href="#"><img src="../images/withdraw-icon.png" alt="Withdraw" />
+                            Withdraw</a>
+                    </li>
+
+                    <li class="sidebar-items ">
+                        <a href="#"><img src="../images/price-setting-icon.png" alt="Price Settings" />
+                            Price Settings</a>
+                    </li>
+
+                    <li class="sidebar-items ">
+                        <a href="#"><img src="../images/price-setting-icon.png" alt="withdrawl Settings" />
+                            Withdrawl Settings</a>
+                    </li>
+
+                    <li class="sidebar-items ">
+                        <a href="#"><img src="../images/support-icon.png" alt="Support" /> Support
+                            (0)</a>
+                    </li>
+
+                    <li class="sidebar-items ">
+                        <a href="#"><img src="../images/ecopays-setting-icon.png" alt="Ecopays Settings" />
+                            Ecopays Settings</a>
+                    </li>
+
+                    <li class="sidebar-items ">
+                        <a href="#"><img src="../images/company-bank-details-icon.png" alt="Company Bank Details" />
+                            Company Bank Details</a>
+                    </li>
+
+                    <li class="sidebar-items ">
+                        <a href="#"><img src="../images/admin-btc-icon.png" alt="Admin BTC Address" />
+                            Admin BTC Address</a>
+                    </li>
+
+                    <li class="sidebar-items ">
+                        <a href="#"><img src="../images/support-icon.png" alt="Support" /> Users Login
+                            History</a>
+                    </li>
+
+                    <li class="sidebar-items ">
+                        <a href="#"><img src="../images/subadmin-control-icon.png" alt="Sub-Admin Control" />
+                            Sub-Admin Control</a>
+                    </li>
+
+                    <li class="sidebar-items ">
+                        <a href="#"><img src="../images/users-messages-icon.png" alt="Users Messages" />
+                            Users Messages</a>
+                    </li>
+
+                    <li class="sidebar-items ">
+                        <a href="#"><img src="../images/site-settings-icon.png" alt="Site Settings" />
+                            Site Settings</a>
+                    </li>
+
+                    <li class="sidebar-items ">
+                        <a href="#"><img src="../images/security-settings-icon.png" alt="Security Settings" />
+                            Security Settings</a>
+                    </li>
+
+                    <li class="sidebar-items ">
+                        <a href="#"><img src="../images/logout-icon.png" alt="Logout" /> Logout</a>
+                    </li>
+                </ul>
+            </section>
+            <!-- End of sidebar -->
+            <div class="dashboard">
+                <section class="users-data admin-wallet" id="admin-wallet">
+                    <h1 class="heading-user-data">Wallet</h1>
+
+                    <div class="wallets">
+                        <div class="wallet-box">
+                            <p class="wallet-head">Bank Wallet</p>
+
+                            <div class="user-tab">
+                                <button class="tabBtns tablinks tablink-active"
+                                    onclick="openUserDetail(event, 'CSB-1')">
+                                    CSB-1
+                                </button>
+
+                                <button class="tabBtns tablinks" onclick="openUserDetail(event, 'CSB-2')">
+                                    CSB-2
+                                </button>
+
+                                <button class="tabBtns tablinks" onclick="openUserDetail(event, 'CSB-3')">
+                                    CSB-3
+                                </button>
+                            </div>
+
+                            <div class="user-tab-content">
+                                <div id="CSB-1" class="content-tab tabContentDetails inline-flex">
+                                    <form class="wallet-form">
+                                        <div class="form-input">
+                                            <div class="input-row">
+                                                <label for="accountName">Account Name</label>
+                                                <input type="text" id="accountName"
+                                                    value="Melroy ventures private limited">
+                                            </div>
+
+                                            <div class="input-row">
+                                                <label for="accountNo">Account No.</label>
+                                                <input type="number" id="accountNo" value="409001738071">
+                                            </div>
+
+                                            <div class="input-row">
+                                                <label for="bankName">Bank Name</label>
+                                                <input type="text" id="bankName" value="THE RATNAKAR BANK LTD">
+                                            </div>
+
+                                            <div class="input-row">
+                                                <label for="bankBranch">Bank Branch</label>
+                                                <input type="text" id="bankBranch" value="ASHOK NAGAR BRANCH">
+                                            </div>
+
+                                            <div class="input-row">
+                                                <label for="ifsc">IFSC Code</label>
+                                                <input type="text" id="ifsc" value="RATN0000300">
+                                            </div>
+
+                                            <div class="input-row">
+                                                <label for="amount">Bank Address</label>
+                                                <textarea name="bankAddress" id="bankAddress"
+                                                    rows="3">GROUND FLOOR, 11TH NRD TOWER, 100 FT ROAD, 1ST AVENUE ASHOK NAGAR, CHENNAI - 600083</textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-btn">
+                                            <button class="submit-btn">
+                                                Update
+                                            </button>
+
+                                            <div class="btn-group">
+                                                <button class="submit-btn">
+                                                    Active
+                                                </button>
+
+                                                <button class="submit-btn">
+                                                    Deactive
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div id="CSB-2" class="content-tab tabContentDetails">
+                                    <form class="wallet-form">
+                                        <div class="form-input">
+                                            <div class="input-row">
+                                                <label for="accountName">Account Name</label>
+                                                <input type="text" id="accountName"
+                                                    value="Melroy ventures private limited">
+                                            </div>
+
+                                            <div class="input-row">
+                                                <label for="accountNo">Account No.</label>
+                                                <input type="number" id="accountNo" value="409001738071">
+                                            </div>
+
+                                            <div class="input-row">
+                                                <label for="bankName">Bank Name</label>
+                                                <input type="text" id="bankName" value="THE RATNAKAR BANK LTD">
+                                            </div>
+
+                                            <div class="input-row">
+                                                <label for="bankBranch">Bank Branch</label>
+                                                <input type="text" id="bankBranch" value="ASHOK NAGAR BRANCH">
+                                            </div>
+
+                                            <div class="input-row">
+                                                <label for="ifsc">IFSC Code</label>
+                                                <input type="text" id="ifsc" value="RATN0000300">
+                                            </div>
+
+                                            <div class="input-row">
+                                                <label for="amount">Bank Address</label>
+                                                <textarea name="bankAddress" id="bankAddress"
+                                                    rows="3">GROUND FLOOR, 11TH NRD TOWER, 100 FT ROAD, 1ST AVENUE ASHOK NAGAR, CHENNAI - 600083</textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-btn">
+                                            <button class="submit-btn">
+                                                Update
+                                            </button>
+
+                                            <div class="btn-group">
+                                                <button class="submit-btn">
+                                                    Active
+                                                </button>
+
+                                                <button class="submit-btn">
+                                                    Deactive
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div id="CSB-3" class="content-tab tabContentDetails">
+                                    <form class="wallet-form">
+                                        <div class="form-input">
+                                            <div class="input-row">
+                                                <label for="accountName">Account Name</label>
+                                                <input type="text" id="accountName"
+                                                    value="Melroy ventures private limited">
+                                            </div>
+
+                                            <div class="input-row">
+                                                <label for="accountNo">Account No.</label>
+                                                <input type="number" id="accountNo" value="409001738071">
+                                            </div>
+
+                                            <div class="input-row">
+                                                <label for="bankName">Bank Name</label>
+                                                <input type="text" id="bankName" value="THE RATNAKAR BANK LTD">
+                                            </div>
+
+                                            <div class="input-row">
+                                                <label for="bankBranch">Bank Branch</label>
+                                                <input type="text" id="bankBranch" value="ASHOK NAGAR BRANCH">
+                                            </div>
+
+                                            <div class="input-row">
+                                                <label for="ifsc">IFSC Code</label>
+                                                <input type="text" id="ifsc" value="RATN0000300">
+                                            </div>
+
+                                            <div class="input-row">
+                                                <label for="amount">Bank Address</label>
+                                                <textarea name="bankAddress" id="bankAddress"
+                                                    rows="3">GROUND FLOOR, 11TH NRD TOWER, 100 FT ROAD, 1ST AVENUE ASHOK NAGAR, CHENNAI - 600083</textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-btn">
+                                            <button class="submit-btn">
+                                                Update
+                                            </button>
+
+                                            <div class="btn-group">
+                                                <button class="submit-btn">
+                                                    Active
+                                                </button>
+
+                                                <button class="submit-btn">
+                                                    Deactive
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wallet-box">
+                            <p class="wallet-head">Crypto Wallet</p>
+
+                            <div class="user-tab">
+                                <button class="tabBtns tablinksCST  tablink-active" onclick="openCST(event, 'CST-1')">
+                                    CST-1
+                                </button>
+
+                                <button class="tabBtns tablinksCST" onclick="openCST(event, 'CST-2')">
+                                    CST-2
+                                </button>
+
+                                <button class="tabBtns tablinksCST" onclick="openCST(event, 'CST-3')">
+                                    CST-3
+                                </button>
+                            </div>
+
+                            <div class="user-tab-content">
+                                <div id="CST-1" class="content-tab contentTabCST  inline-flex">
+                                    <form class="wallet-form">
+                                        <div class="form-input">
+                                            <div class="form-input">
+                                                <div class="input-row">
+                                                    <label for="btc">BTC</label>
+                                                    <input type="text" id="btc"
+                                                        value="1FK3RQpNv8JbxUoa4i3wRRDBi7QfD9QsKW">
+                                                </div>
+
+                                                <div class="input-row">
+                                                    <label for="eth">ETH</label>
+                                                    <input type="text" id="eth"
+                                                        value="1FK3RQpNv8JbxUoa4i3wRRDBi7QfD9QsKW">
+                                                </div>
+
+                                                <div class="input-row">
+                                                    <label for="usdt">USDT</label>
+                                                    <input type="text" id="usdt"
+                                                        value="1FK3RQpNv8JbxUoa4i3wRRDBi7QfD9QsKW">
+                                                </div>
+
+                                                <div class="input-row">
+                                                    <label for="trx">TRX</label>
+                                                    <input type="text" id="trx"
+                                                        value="1FK3RQpNv8JbxUoa4i3wRRDBi7QfD9QsKW">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-btn">
+                                            <button class="submit-btn">
+                                                Update
+                                            </button>
+
+                                            <div class="btn-group">
+                                                <button class="submit-btn">
+                                                    Active
+                                                </button>
+
+                                                <button class="submit-btn">
+                                                    Deactive
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div id="CST-2" class="content-tab contentTabCST ">
+                                    <form class="wallet-form">
+                                        <div class="form-input">
+                                            <div class="form-input">
+                                                <div class="input-row">
+                                                    <label for="btc">BTC</label>
+                                                    <input type="text" id="btc"
+                                                        value="1FK3RQpNv8JbxUoa4i3wRRDBi7QfD9QsKW">
+                                                </div>
+
+                                                <div class="input-row">
+                                                    <label for="eth">ETH</label>
+                                                    <input type="text" id="eth"
+                                                        value="1FK3RQpNv8JbxUoa4i3wRRDBi7QfD9QsKW">
+                                                </div>
+
+                                                <div class="input-row">
+                                                    <label for="usdt">USDT</label>
+                                                    <input type="text" id="usdt"
+                                                        value="1FK3RQpNv8JbxUoa4i3wRRDBi7QfD9QsKW">
+                                                </div>
+
+                                                <div class="input-row">
+                                                    <label for="trx">TRX</label>
+                                                    <input type="text" id="trx"
+                                                        value="1FK3RQpNv8JbxUoa4i3wRRDBi7QfD9QsKW">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-btn">
+                                            <button class="submit-btn">
+                                                Update
+                                            </button>
+
+                                            <div class="btn-group">
+                                                <button class="submit-btn">
+                                                    Active
+                                                </button>
+
+                                                <button class="submit-btn">
+                                                    Deactive
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div id="CST-3" class="content-tab contentTabCST ">
+                                    <form class="wallet-form">
+                                        <div class="form-input">
+                                            <div class="form-input">
+                                                <div class="input-row">
+                                                    <label for="btc">BTC</label>
+                                                    <input type="text" id="btc"
+                                                        value="1FK3RQpNv8JbxUoa4i3wRRDBi7QfD9QsKW">
+                                                </div>
+
+                                                <div class="input-row">
+                                                    <label for="eth">ETH</label>
+                                                    <input type="text" id="eth"
+                                                        value="1FK3RQpNv8JbxUoa4i3wRRDBi7QfD9QsKW">
+                                                </div>
+
+                                                <div class="input-row">
+                                                    <label for="usdt">USDT</label>
+                                                    <input type="text" id="usdt"
+                                                        value="1FK3RQpNv8JbxUoa4i3wRRDBi7QfD9QsKW">
+                                                </div>
+
+                                                <div class="input-row">
+                                                    <label for="trx">TRX</label>
+                                                    <input type="text" id="trx"
+                                                        value="1FK3RQpNv8JbxUoa4i3wRRDBi7QfD9QsKW">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-btn">
+                                            <button class="submit-btn">
+                                                Update
+                                            </button>
+
+                                            <div class="btn-group">
+                                                <button class="submit-btn">
+                                                    Active
+                                                </button>
+
+                                                <button class="submit-btn">
+                                                    Deactive
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wallet-box">
+                            <p class="wallet-head">E-Currency Wallet</p>
+
+                            <div class="user-tab">
+                                <button class="tabBtns tablinksCSE  tablink-active" onclick="openCSE(event, 'CSE-1')">
+                                    CSE-1
+                                </button>
+
+                                <button class="tabBtns tablinksCSE" onclick="openCSE(event, 'CSE-2')">
+                                    CSE-2
+                                </button>
+
+                                <button class="tabBtns tablinksCSE" onclick="openCSE(event, 'CSE-3')">
+                                    CSE-3
+                                </button>
+                            </div>
+
+                            <div class="user-tab-content">
+                                <div id="CSE-1" class="content-tab contentTabCSE  inline-flex">
+                                    <form class="wallet-form">
+                                        <div class="form-input">
+                                            <div class="form-input">
+                                                <div class="input-row">
+                                                    <label for="astropayINR">Astropay INR/USD</label>
+                                                    <input type="text" id="astropayINR" value="9962657253">
+                                                </div>
+
+                                                <div class="input-row">
+                                                    <label for="moneygoUSD">MoneyGo USD</label>
+                                                    <input type="text" id="moneygoUSD" value="U1201331">
+                                                </div>
+
+                                                <div class="input-row">
+                                                    <label for="moneygoEUR">MoneyGo EUR</label>
+                                                    <input type="text" id="moneygoEUR" value="E1201332">
+                                                </div>
+
+                                                <div class="input-row">
+                                                    <label for="moneygoRUB">MoneyGo RUB</label>
+                                                    <input type="text" id="moneygoRUB" value="R1201333">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-btn">
+                                            <button class="submit-btn">
+                                                Update
+                                            </button>
+
+                                            <div class="btn-group">
+                                                <button class="submit-btn">
+                                                    Active
+                                                </button>
+
+                                                <button class="submit-btn">
+                                                    Deactive
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div id="CSE-2" class="content-tab contentTabCSE ">
+                                    <form class="wallet-form">
+                                        <div class="form-input">
+                                            <div class="form-input">
+                                                <div class="input-row">
+                                                    <label for="astropayINR">Astropay INR/USD</label>
+                                                    <input type="text" id="astropayINR" value="9962657253">
+                                                </div>
+
+                                                <div class="input-row">
+                                                    <label for="moneygoUSD">MoneyGo USD</label>
+                                                    <input type="text" id="moneygoUSD" value="U1201331">
+                                                </div>
+
+                                                <div class="input-row">
+                                                    <label for="moneygoEUR">MoneyGo EUR</label>
+                                                    <input type="text" id="moneygoEUR" value="E1201332">
+                                                </div>
+
+                                                <div class="input-row">
+                                                    <label for="moneygoRUB">MoneyGo RUB</label>
+                                                    <input type="text" id="moneygoRUB" value="R1201333">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-btn">
+                                            <button class="submit-btn">
+                                                Update
+                                            </button>
+
+                                            <div class="btn-group">
+                                                <button class="submit-btn">
+                                                    Active
+                                                </button>
+
+                                                <button class="submit-btn">
+                                                    Deactive
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div id="CSE-3" class="content-tab contentTabCSE ">
+                                    <form class="wallet-form">
+                                        <div class="form-input">
+                                            <div class="form-input">
+                                                <div class="input-row">
+                                                    <label for="astropayINR">Astropay INR/USD</label>
+                                                    <input type="text" id="astropayINR" value="9962657253">
+                                                </div>
+
+                                                <div class="input-row">
+                                                    <label for="moneygoUSD">MoneyGo USD</label>
+                                                    <input type="text" id="moneygoUSD" value="U1201331">
+                                                </div>
+
+                                                <div class="input-row">
+                                                    <label for="moneygoEUR">MoneyGo EUR</label>
+                                                    <input type="text" id="moneygoEUR" value="E1201332">
+                                                </div>
+
+                                                <div class="input-row">
+                                                    <label for="moneygoRUB">MoneyGo RUB</label>
+                                                    <input type="text" id="moneygoRUB" value="R1201333">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-btn">
+                                            <button class="submit-btn">
+                                                Update
+                                            </button>
+
+                                            <div class="btn-group">
+                                                <button class="submit-btn">
+                                                    Active
+                                                </button>
+
+                                                <button class="submit-btn">
+                                                    Deactive
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!-- End of Main -->
+    </div>
+
+    <script src="../scripts/pages.js"></script>
+    <script src="../scripts/index.js"></script>
+</body>
+
+</html>

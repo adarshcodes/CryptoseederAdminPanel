@@ -135,3 +135,51 @@ function openUserDetail(evt, tabName) {
 	document.getElementById(tabName).style.display = "inline-flex";
 	evt.currentTarget.classList.toggle("tablink-active");
 }
+
+function openCST(evt, tabName) {
+	var i, tabContentDetails, tablinks;
+	tabContentDetails = document.getElementsByClassName("contentTabCST");
+	for (i = 0; i < tabContentDetails.length; i++) {
+		tabContentDetails[i].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablinksCST");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(
+			" tablink-active",
+			""
+		);
+	}
+
+	let tabContent = document.querySelectorAll(".contentTabCST");
+
+	tabContent.forEach(function (tab) {
+		tab.classList.remove("inline-flex");
+	});
+
+	document.getElementById(tabName).style.display = "inline-flex";
+	evt.currentTarget.classList.toggle("tablink-active");
+}
+
+function openCSE(evt, tabName) {
+	var i, tabContentDetails, tablinks;
+	tabContentDetails = document.getElementsByClassName("contentTabCSE");
+	for (i = 0; i < tabContentDetails.length; i++) {
+		tabContentDetails[i].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablinksCSE");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(
+			" tablink-active",
+			""
+		);
+	}
+
+	let tabContent = document.querySelectorAll(".contentTabCSE");
+
+	tabContent.forEach(function (tab) {
+		tab.classList.remove("inline-flex");
+	});
+
+	document.getElementById(tabName).style.display = "inline-flex";
+	evt.currentTarget.classList.toggle("tablink-active");
+}
