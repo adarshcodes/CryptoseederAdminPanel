@@ -64,6 +64,10 @@ table {
   padding: 1rem 3rem;
 }
 
+.arrow-down {
+  font-size: 1.1rem;
+}
+
 .sidebar {
   position: fixed;
   background-color: #002941;
@@ -73,6 +77,18 @@ table {
   margin-right: 0.8rem;
   font-size: 1.35rem;
   padding: 2.5rem 1rem 5rem 1rem;
+  overflow-y: auto;
+}
+.sidebar::-webkit-scrollbar-track {
+  background-color: #002941;
+}
+.sidebar::-webkit-scrollbar {
+  width: 3px;
+  background-color: #0e3544;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #1e5968;
+  border-radius: 0.5rem;
 }
 .sidebar-items {
   margin: 0.7rem 0;
@@ -83,7 +99,28 @@ table {
   width: 1.4rem;
   margin-right: 0.5rem;
 }
-.sidebar-items:hover {
+.sidebar-items:hover a {
+  color: #fbb040;
+}
+.sidebar-items:hover .sidebar-drop-items a {
+  color: inherit;
+}
+.sidebar-items:hover .sidebar-drop-list {
+  height: auto;
+  overflow: auto;
+  display: inline-block;
+}
+.sidebar-items .sidebar-drop-list {
+  padding: 0.5rem 1rem 0.5rem 2.2rem;
+  height: 0;
+  overflow: hidden;
+  display: none;
+}
+.sidebar-items .sidebar-drop-list .sidebar-drop-items {
+  padding: 0.5rem 0;
+  transition: all 0.3s;
+}
+.sidebar-items .sidebar-drop-list .sidebar-drop-items:hover a {
   color: #fbb040;
 }
 .sidebar .gradient-items {
