@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin - Price Settings | Cryptoseeders</title>
+    <title>Admin - Security Settings | Cryptoseeders</title>
     <link rel="stylesheet" href="../../styles/main.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -172,7 +172,7 @@
                     </li>
 
                     <li class="sidebar-items ">
-                        <a href="./price-settings.html" class="active"><img src="../images/price-setting-icon.png"
+                        <a href="./price-settings.html"><img src="../images/price-setting-icon.png"
                                 alt="Price Settings" />
                             Price Settings</a>
                     </li>
@@ -224,8 +224,8 @@
                     </li>
 
                     <li class="sidebar-items ">
-                        <a href="./security-settings.html"><img src="../images/security-settings-icon.png"
-                                alt="Security Settings" />
+                        <a href="./security-settings.html" class="active"><img
+                                src="../images/security-settings-icon.png" alt="Security Settings" />
                             Security Settings</a>
                     </li>
 
@@ -239,46 +239,45 @@
             <div class="dashboard">
                 <section class="users-data deposite-container" id="users-data">
                     <div class="deposite-head">
-
-                        <h1>Price Settings</h1>
+                        <h1>Security Settings</h1>
                     </div>
 
                     <div class="deposite-view">
                         <form class="deposite-view-form">
+                            <h3 class="head-security">Change Password</h3>
+
                             <div class="input-row">
-                                <label for="coin">Coin</label>
-                                <select name="coin" id="coin" class="coin-select">
-                                    <option value="BTC">BTC</option>
-                                    <option value="ETH">ETH</option>
-                                    <option value="TRX">TRX</option>
-                                    <option value="USDT">USDT</option>
-                                    <option value="Astropay(INR)">Astropay(INR)</option>
-                                    <option value="Astropay(USD)">Astropay(USD)</option>
-                                    <option value="MoneyGo(USD)">MoneyGo(USD)</option>
-                                    <option value="MoneyGo(RUB)">MoneyGo(RUB)</option>
-                                    <option value="MoneyGo(EUR)">MoneyGo(EUR)</option>
+                                <label for="currentPass">Current Password</label>
+                                <input type="text" id="currentPass" placeholder="Old Password" required>
+                            </div>
+
+                            <div class="input-row">
+                                <label for="newPass">New Password</label>
+                                <input type="text" id="newPass" placeholder="New Password" required>
+                            </div>
+
+                            <div class="input-row">
+                                <label for="confirmPass">Confirm New Password</label>
+                                <input type="text" id="confirmPass" placeholder="Confirm Password" required>
+                            </div>
+
+
+                            <button class="submit-btn">
+                                Update
+                            </button>
+                        </form>
+
+                        <form class="deposite-view-form">
+                            <h3 class="head-security">Change 2FA</h3>
+
+                            <div class="input-row">
+                                <label for="2fa">Google 2FA</label>
+                                <select name="2fa" id="2fa" class="coin-select">
+                                    <option value="BTC">Enabled</option>
+                                    <option value="ETH">Disabled</option>
                                 </select>
                             </div>
 
-                            <div class="input-row">
-                                <label for="price">Price</label>
-                                <input type="number" id="price" value="122819.8">
-                            </div>
-
-                            <div class="input-row">
-                                <label for="buyCommission">Buy Commission %</label>
-                                <input type="number" id="buyCommission" value="1">
-                            </div>
-
-                            <div class="input-row">
-                                <label for="sellCommission">Sell Commission %</label>
-                                <input type="number" id="sellCommission" value="1">
-                            </div>
-
-                            <div class="input-row">
-                                <label for="withdrawCommission">Withdraw Commission %</label>
-                                <input type="number" id="withdrawCommission" value="0">
-                            </div>
                             <button class="submit-btn">
                                 Update
                             </button>
