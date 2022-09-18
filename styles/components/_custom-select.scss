@@ -24,3 +24,19 @@
         border-radius: 0;
     }
 }
+
+.coin-select {
+    width: 70%;
+    padding: .5rem;
+    outline: none;
+    border: none;
+    border-bottom: solid 2px #1F858E;
+    color: #ffffff;
+    font-size: 1.3rem;
+    background-color: transparent;
+
+    option {
+        color: $color-primary-white;
+        background-color: $color-primary-blue;
+    }
+}

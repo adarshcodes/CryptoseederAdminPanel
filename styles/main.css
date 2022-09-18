@@ -201,6 +201,21 @@ table {
   border-radius: 0;
 }
 
+.coin-select {
+  width: 70%;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-bottom: solid 2px #1F858E;
+  color: #ffffff;
+  font-size: 1.3rem;
+  background-color: transparent;
+}
+.coin-select option {
+  color: #ffffff;
+  background-color: #002941;
+}
+
 .filter {
   display: flex;
   gap: 1rem;
