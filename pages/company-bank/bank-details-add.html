@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin - Company Bank Detail | Cryptoseeders</title>
+    <title>Admin - Company Bank Details | Cryptoseeders</title>
     <link rel="stylesheet" href="../../styles/main.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -245,52 +245,61 @@
             <div class="dashboard">
                 <section class="users-data deposite-container" id="users-data">
                     <div class="deposite-head">
-                        <h1>Company Bank Details</h1>
-
-                        <div class="view-btn">
-                            <a href="./bank-details-add.html">
-                                <i class="fa-solid fa-circle-plus"></i> Add New Account
+                        <p>
+                            <a href="./bank-details.html">
+                                <img src="../../images/back-icon.png" alt="back">
+                                Back to Company Bank Details
                             </a>
-                        </div>
+                        </p>
                     </div>
 
-                    <div class="deposite-view withdrawal-setting-container">
-                        <div class="kyc-details-container">
-                            <table class="wp-list-table widefat striped posts" id="pager">
-                                <thead>
-                                    <tr>
-                                        <th>Date & Time</th>
-                                        <th>Account Name</th>
-                                        <th>Account Number</th>
-                                        <th>Bank Name</th>
-                                        <th>Bank Code</th>
-                                        <th>Bank Details</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
+                    <div class="deposite-view">
+                        <form class="deposite-view-form">
+                            <div class="input-row">
+                                <label for="newAcName">Account Name</label>
+                                <input type="text" id="newAcName" required>
+                            </div>
 
-                                <tbody>
-                                    <tr>
-                                        <td>2022/05/16 07:34:43</td>
-                                        <td>Melroy ventures private limited</td>
-                                        <td>409001738071</td>
-                                        <td>THE RATNAKAR BANK LTD</td>
-                                        <td>RATN0000300</td>
-                                        <td>GROUND FLOOR, 11TH NRD TOWER, 100 FT ROAD, 1ST AVE...</td>
-                                        <td class="table-data-btn">
-                                            <div class="view-btn">
-                                                <a href="./bank-view.html">
-                                                    <img src="../../images/view-icon.png" alt="view"> View/Edit
-                                                </a>
-                                            </div>
-                                            <div class="view-btn delete-btn">
-                                                <img src="../../images/delete-icon.png" alt="delete"> Delete
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                            <div class="input-row">
+                                <label for="newAcNo">Account Number
+                                </label>
+                                <input type="number" id="newAcNo" required>
+                            </div>
+
+                            <div class="input-row">
+                                <label for="newBankName">Bank Name
+                                </label>
+                                <input type="text" id="newBankName" required>
+                            </div>
+
+                            <div class="input-row">
+                                <label for="newBankBranch">Bank Branch
+                                </label>
+                                <input type="text" id="newBankBranch" required>
+                            </div>
+
+                            <div class="input-row">
+                                <label for="newBankAddress">Bank Address
+                                </label>
+                                <input type="text" id="newBankAddress" required>
+                            </div>
+
+                            <div class="input-row">
+                                <label for="newSwiftCode">Swift Code
+                                </label>
+                                <input type="text" id="newSwiftCode" required>
+                            </div>
+
+                            <div class="input-row">
+                                <label for="newBranchCode">Branch Code
+                                </label>
+                                <input type="text" id="newBranchCode" required>
+                            </div>
+
+                            <button class="submit-btn">
+                                Add Now
+                            </button>
+                        </form>
                     </div>
                 </section>
             </div>
@@ -298,6 +307,7 @@
         <!-- End of Main -->
     </div>
 
+    <script src="../../scripts/pages.js" defer></script>
     <script src="../../scripts/index.js"></script>
 </body>
 
