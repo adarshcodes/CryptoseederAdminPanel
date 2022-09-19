@@ -662,6 +662,9 @@ tbody tr:hover {
   padding: 1rem;
 }
 
+.kyc-details-container {
+  overflow-x: auto;
+}
 .kyc-details-container table {
   width: 100%;
   font-size: 1.5rem;
@@ -1075,5 +1078,18 @@ tbody tr:hover {
 }
 
 .withdrawal-setting-container {
-  margin-top: 5rem;
+  margin-top: 3rem;
+}
+
+.table-data-btn {
+  display: flex;
+  gap: 0.5rem;
+}
+.table-data-btn .view-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-data-btn a {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin - Withdrawl Settings | Cryptoseeders</title>
+    <title>Admin - Company Bank Details | Cryptoseeders</title>
     <link rel="stylesheet" href="../../styles/main.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -181,25 +181,25 @@
                     </li>
 
                     <li class="sidebar-items ">
-                        <a href="./withdrawal-settings.html" class="active"><img
+                        <a href="../withdrawal-settings/withdrawal-settings.html"><img
                                 src="../../images/price-setting-icon.png" alt="withdrawl Settings" />
                             Withdrawal Settings</a>
                     </li>
 
                     <li class="sidebar-items ">
-                        <a href="../ecopays-settings/ecopays-settings.html"><img src="../../images/support-icon.png"
-                                alt="Support" /> Support
+                        <a href="#"><img src="../../images/support-icon.png" alt="Support" /> Support
                             (0)</a>
                     </li>
 
                     <li class="sidebar-items ">
-                        <a href="../company-bank/bank-details.html"><img src="../../images/ecopays-setting-icon.png"
-                                alt="Ecopays Settings" />
+                        <a href="../ecopays-settings/ecopays-settings.html"><img
+                                src="../../images/ecopays-setting-icon.png" alt="Ecopays Settings" />
                             Ecopays Settings</a>
                     </li>
 
                     <li class="sidebar-items ">
-                        <a href="#"><img src="../../images/company-bank-details-icon.png" alt="Company Bank Details" />
+                        <a href="./bank-details.html" class="active"><img
+                                src="../../images/company-bank-details-icon.png" alt="Company Bank Details" />
                             Company Bank Details</a>
                     </li>
 
@@ -245,9 +245,9 @@
                 <section class="users-data deposite-container" id="users-data">
                     <div class="deposite-head">
                         <p>
-                            <a href="./withdrawal-settings.html">
+                            <a href="./bank-details.html">
                                 <img src="../../images/back-icon.png" alt="back">
-                                Back to Withdrawal Settings
+                                Back to Company Bank Details
                             </a>
                         </p>
                     </div>
@@ -255,46 +255,54 @@
                     <div class="deposite-view">
                         <form class="deposite-view-form">
                             <div class="input-row">
-                                <label for="coin">Coin/Currency</label>
+                                <label for="acName">Account Name</label>
+                                <input type="text" id="acName" value="Melroy ventures private limited">
+                            </div>
+
+                            <div class="input-row">
+                                <label for="acNo">Account Number
+                                </label>
+                                <input type="number" id="acNo" value="409001738071">
+                            </div>
+
+                            <div class="input-row">
+                                <label for="bankName">Bank Name
+                                </label>
+                                <input type="text" id="bankName" value="THE RATNAKAR BANK LTD">
+                            </div>
+
+                            <div class="input-row">
+                                <label for="bankBranch">Bank Branch
+                                </label>
+                                <input type="text" id="bankBranch" value="ASHOK NAGAR BRANCH">
+                            </div>
+
+                            <div class="input-row">
+                                <label for="bankAddress">Bank Address
+                                </label>
+                                <input type="text" id="bankAddress"
+                                    value="GROUND FLOOR, 11TH NRD TOWER, 100 FT ROAD, 1ST AVENUE ASHOK NAGAR, CHENNAI - 600083">
+                            </div>
+
+                            <div class="input-row">
+                                <label for="swiftCode">Swift Code
+                                </label>
+                                <input type="text" id="swiftCode" value="RATN0000300">
+                            </div>
+
+                            <div class="input-row">
+                                <label for="branchCode">Branch Code
+                                </label>
+                                <input type="text" id="branchCode" value="RATN0000300">
+                            </div>
+
+                            <div class="input-row">
+                                <label for="coin">Select Status
+                                </label>
                                 <select name="coin" id="coin" class="coin-select">
-                                    <option value="BTC">BTC</option>
-                                    <option value="ETH">ETH</option>
-                                    <option value="TRX">TRX</option>
-                                    <option value="USDT">USDT</option>
-                                    <option value="Astropay(INR)">Astropay(INR)</option>
-                                    <option value="Astropay(USD)">Astropay(USD)</option>
-                                    <option value="MoneyGo(USD)">MoneyGo(USD)</option>
-                                    <option value="MoneyGo(RUB)">MoneyGo(RUB)</option>
-                                    <option value="MoneyGo(EUR)">MoneyGo(EUR)</option>
+                                    <option value="Active">Active</option>
+                                    <option value="Deactivate">Deactivate</option>
                                 </select>
-                            </div>
-
-                            <div class="input-row">
-                                <label for="withdrawCommissionType">Withdraw Commission Type</label>
-                                <select name="withdrawCommissionType" id="withdrawCommissionType" class="coin-select">
-                                    <option value="Fixed">Fixed</option>
-                                    <option value="Percentage">Percentage</option>
-                                </select>
-                            </div>
-
-                            <div class="input-row">
-                                <label for="withdrawCommission">Withdraw Commission </label>
-                                <input type="number" id="withdrawCommission" value="20">
-                            </div>
-
-                            <div class="input-row">
-                                <label for="minWithdraw">Min. Withdraw</label>
-                                <input type="number" id="minWithdraw" value="100">
-                            </div>
-
-                            <div class="input-row">
-                                <label for="maxWithdraw">Max. Withdraw</label>
-                                <input type="number" id="maxWithdraw" value="100000">
-                            </div>
-
-                            <div class="input-row">
-                                <label for="minDeposite">Min. Deposite</label>
-                                <input type="number" id="minDeposite" value="100">
                             </div>
 
                             <button class="submit-btn">

@@ -75,5 +75,20 @@
 }
 
 .withdrawal-setting-container {
-    margin-top: 5rem;
+    margin-top: 3rem;
+}
+
+.table-data-btn {
+    display: flex;
+    gap: 0.5rem;
+
+    .view-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        display: flex;
+    }
 }
