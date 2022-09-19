@@ -781,6 +781,9 @@ tbody tr:hover {
   background-color: #0D7B8A;
   color: #ffffff;
 }
+.txn-history-head .txn-searchbar .search-input::placeholder {
+  color: rgb(228, 228, 228);
+}
 .txn-history-head .txn-searchbar .search-btn,
 .txn-history-head .txn-searchbar .reset-btn {
   padding: 0.5rem 1rem;

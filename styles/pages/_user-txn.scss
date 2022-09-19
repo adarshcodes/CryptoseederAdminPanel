@@ -11,6 +11,10 @@
             outline: none;
             background-color: #0D7B8A;
             color: $color-primary-white;
+
+            &::placeholder {
+                color: rgb(228, 228, 228);
+            }
         }
 
         .search-btn,
@@ -141,6 +145,8 @@
                         border: none;
                         border-bottom: solid 2px #1F858E;
                         color: $color-primary-white;
+
+
                     }
                 }
 
