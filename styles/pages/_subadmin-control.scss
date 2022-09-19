@@ -1,0 +1,134 @@
+.subadmin-container {
+    .subadmin-searchbar {
+        .date-input {
+            background-color: transparent;
+            color: $color-primary-white;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid #1F858E;
+            padding: .5rem;
+        }
+    }
+
+    .back-subadmin-btn {
+        font-size: 1.5rem;
+        margin: 2rem 0;
+    }
+
+    .admin-controls {
+        display: flex;
+        gap: 1rem;
+
+        .admin-setting-box {
+            width: 33.33%;
+            padding: 1rem;
+            font-size: 1.2rem;
+
+            &:not(:last-child) {
+                @include border-right-grad;
+            }
+
+            .subadmin-heading {
+                @include grad-2;
+                display: inline-block;
+                padding: .5rem 1rem;
+                font-size: 1.6rem;
+            }
+
+            .subadmin-form {
+                margin-top: 2.5rem;
+
+                .inputs {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+
+                    .input-row {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+
+                        input {
+                            width: 60%;
+                            padding: 0.5rem;
+                            outline: none;
+                            background-color: transparent;
+                            border: none;
+                            border-bottom: solid 2px #1F858E;
+                            color: #ffffff;
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    p {
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                .container-update {
+                    margin-top: 6rem;
+                }
+
+                .checkbox-container {
+                    @include flex-column;
+                    gap: 2rem;
+                    padding: 0 3rem 0 0;
+                    margin-bottom: 3rem;
+
+                    .check-part-1 {
+                        @include flex-column;
+                        gap: 2rem;
+
+                        .check-box {
+                            @include flex-row-spacebetween;
+                            align-items: flex-start;
+
+                            li {
+                                margin: .5rem 0;
+                                display: flex;
+                                align-items: center;
+
+                                label {
+                                    margin-left: .5rem;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+
+                    .check-part-2 {
+                        .check-row {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 1rem;
+
+                            ul {
+                                display: flex;
+                                justify-content: space-between;
+                                gap: 2rem;
+
+                                li {
+                                    display: flex;
+                                    align-items: center;
+
+                                    label {
+                                        margin-left: .5rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .submit-btn {
+                    padding: .5rem 2rem;
+                    @include grad-2;
+                    color: $color-primary-white;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
