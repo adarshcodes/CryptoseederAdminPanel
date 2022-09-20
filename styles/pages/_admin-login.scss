@@ -1,0 +1,85 @@
+.login-container {
+    background: linear-gradient(90deg, rgb(15 97 165) 35%, rgb(26 54 154) 100%);
+    min-height: 100vh;
+    @include flex-row-center;
+    font-size: 1.3rem;
+
+    .login-card {
+        max-width: 33rem;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 1rem;
+        color: #fff;
+        background: rgb(13 38 95);
+
+        .logo-img {
+            max-width: 16rem;
+            width: 100%;
+            padding: 1rem 0 2.5rem 0;
+        }
+
+        .admin-box {
+            padding: 1.25rem;
+            border-radius: 2px;
+            background-color: rgb(15 97 165);
+            margin-bottom: 2rem;
+            @include flex-column-center;
+
+            .circle {
+                width: 4rem;
+                height: 4rem;
+                background-color: $color-primary-white;
+                @include flex-row-center;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+
+                i {
+                    color: rgb(15 97 165);
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .admin-login-form {
+            @include flex-column-center;
+            margin-bottom: 2rem;
+            margin-top: 4rem;
+
+            input {
+                width: 90%;
+                margin-bottom: 2rem;
+                padding: 1rem;
+                outline: none;
+                background-color: transparent;
+                border: none;
+                border-bottom: .01rem solid rgba(204, 204, 204, 0.09);
+                text-align: center;
+                color: #fff;
+
+                &::placeholder {
+                    color: rgb(181, 181, 181);
+                }
+            }
+
+            .login-btn {
+                margin-top: 1rem;
+                padding: 1.4rem;
+                font-size: 1.4rem;
+                border-radius: 50%;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                width: 4rem;
+                height: 4rem;
+                background-color: rgb(15 97 165);
+                color: #fff;
+                transition: all .3s;
+
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+}

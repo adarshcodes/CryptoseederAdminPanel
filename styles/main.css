@@ -1212,4 +1212,90 @@ tbody tr:hover {
   outline: none;
   border: none;
   cursor: pointer;
+}
+
+.login-container {
+  background: linear-gradient(90deg, rgb(15, 97, 165) 35%, rgb(26, 54, 154) 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.login-container .login-card {
+  max-width: 33rem;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #fff;
+  background: rgb(13, 38, 95);
+}
+.login-container .login-card .logo-img {
+  max-width: 16rem;
+  width: 100%;
+  padding: 1rem 0 2.5rem 0;
+}
+.login-container .login-card .admin-box {
+  padding: 1.25rem;
+  border-radius: 2px;
+  background-color: rgb(15, 97, 165);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-container .login-card .admin-box .circle {
+  width: 4rem;
+  height: 4rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.login-container .login-card .admin-box .circle i {
+  color: rgb(15, 97, 165);
+  font-size: 2rem;
+}
+.login-container .login-card .admin-login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+.login-container .login-card .admin-login-form input {
+  width: 90%;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.01rem solid rgba(204, 204, 204, 0.09);
+  text-align: center;
+  color: #fff;
+}
+.login-container .login-card .admin-login-form input::placeholder {
+  color: rgb(181, 181, 181);
+}
+.login-container .login-card .admin-login-form .login-btn {
+  margin-top: 1rem;
+  padding: 1.4rem;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(15, 97, 165);
+  color: #fff;
+  transition: all 0.3s;
+}
+.login-container .login-card .admin-login-form .login-btn:hover {
+  color: black;
 }/*# sourceMappingURL=main.css.map */
