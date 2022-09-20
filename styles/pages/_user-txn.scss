@@ -55,6 +55,7 @@
 .txn-history-table {
     margin-top: 3rem;
     width: 100%;
+    overflow-x: auto;
 
     table {
         width: 100%;

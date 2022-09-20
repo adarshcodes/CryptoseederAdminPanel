@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin - Subadmin Control | Cryptoseeders</title>
+    <title>Admin - Support | Cryptoseeders</title>
     <link rel="stylesheet" href="../../styles/main.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -72,7 +72,7 @@
                             (0)</a>
                     </li>
 
-                    <li class="sidebar-items ">
+                    <li class="sidebar-items">
                         <a href="../user-txn/user-txn.html"><img src="../../images/user-txn-icon.png"
                                 alt="User Transaction" />
                             User Transaction</a>
@@ -189,8 +189,8 @@
                     </li>
 
                     <li class="sidebar-items ">
-                        <a href="../support/support.html"><img src="../../images/support-icon.png" alt="Support" />
-                            Support
+                        <a href="./support.html" class=" active"><img src="../../images/support-icon.png"
+                                alt="Support" /> Support
                             (0)</a>
                     </li>
 
@@ -219,8 +219,8 @@
                     </li>
 
                     <li class="sidebar-items ">
-                        <a href="./subadmin-list.html" class="active"><img src="../../images/subadmin-control-icon.png"
-                                alt="Sub-Admin Control" />
+                        <a href="../subadmin-control/subadmin-list.html"><img
+                                src="../../images/subadmin-control-icon.png" alt="Sub-Admin Control" />
                             Sub-Admin Control</a>
                     </li>
 
@@ -248,289 +248,387 @@
             <!-- End of sidebar -->
 
             <div class="dashboard">
-                <section class="users-data subadmin-container" id="subadmin-container">
-                    <h1 class="heading-user-data">Admin List</h1>
+                <section class="users-data" id="users-data">
+                    <h1 class="heading-user-data">Support</h1>
 
                     <div class="txn-history-head">
-                        <form class="txn-searchbar subadmin-searchbar">
-                            <input type="date" placeholder="start-date" class="date-input" required>
-                            <input type="date" placeholder="end-date" class="date-input" required>
+                        <form class="txn-searchbar">
+                            <input type="text" class="search-input"
+                                placeholder="Search for Username or FullName or Email or Ticket ID" required>
                             <button class="search-btn">Search</button>
                             <input type="reset" class="reset-btn">
                         </form>
-
-                        <div class="view-btn">
-                            <a href="./subadmin-settings.html">
-                                <i class="fa-solid fa-circle-plus"></i> Add New Admin
-                            </a>
-                        </div>
                     </div>
 
                     <div class="txn-history-table">
                         <table class="txn-table wp-list-table widefat striped posts" id="pager">
                             <thead>
                                 <tr>
-                                    <th>S.No</th>
                                     <th>
-                                        Username
+                                        Date/Time
                                     </th>
+                                    <th>Ticket ID</th>
                                     <th>
-                                        Email
+                                        Full Name
                                     </th>
-                                    <th>Date & Time</th>
+                                    <th>Email</th>
+                                    <th>Unread</th>
+                                    <th>Subject</th>
+                                    <th>Status</th>
+                                    <th>Message</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
 
                             <tbody>
                                 <tr class="table-row">
-                                    <td class="table-data">1</td>
                                     <td class="table-data">
-                                        spartavinoth
+                                        2022/08/012 0:34:16
                                     </td>
                                     <td class="table-data">
-                                        sparta.vinoth@gmail.com
+                                        ST1161CS
                                     </td>
-                                    <td class="table-data">04-08-2022 11:58:58</td>
-                                    <td class="table-data-btn">
+                                    <td class="table-data">PURUSHOTHAMAN PANDURANGAN</td>
+                                    <td class="table-data">chandrumadu1977@gmail.com</td>
+                                    <td class="table-data">0</td>
+                                    <td class="table-data">Kyc Verification</td>
+                                    <td class="table-data">Opened</td>
+                                    <td class="table-data">Document Uploaded</td>
+                                    <td class="table-data table-data-btn">
                                         <div class="view-btn">
-                                            <a href="./subadmin-settings.html">
-                                                <img src="../../images/view-icon.png" alt="view">Edit
+                                            <a href="./support-view.html">
+                                                Chat
                                             </a>
-                                        </div>
-                                        <div class="view-btn delete-btn">
-                                            <img src="../../images/delete-icon.png" alt="delete">Remove
                                         </div>
                                     </td>
                                 </tr>
 
                                 <tr class="table-row">
-                                    <td class="table-data">1</td>
                                     <td class="table-data">
-                                        spartavinoth
+                                        2022/08/012 0:34:16
                                     </td>
                                     <td class="table-data">
-                                        sparta.vinoth@gmail.com
+                                        ST1161CS
                                     </td>
-                                    <td class="table-data">04-08-2022 11:58:58</td>
-                                    <td class="table-data-btn">
+                                    <td class="table-data">PURUSHOTHAMAN PANDURANGAN</td>
+                                    <td class="table-data">chandrumadu1977@gmail.com</td>
+                                    <td class="table-data">0</td>
+                                    <td class="table-data">Kyc Verification</td>
+                                    <td class="table-data">Opened</td>
+                                    <td class="table-data">Document Uploaded</td>
+                                    <td class="table-data table-data-btn">
                                         <div class="view-btn">
-                                            <a href="./subadmin-settings.html">
-                                                <img src="../../images/view-icon.png" alt="view">Edit
+                                            <a href="./support-view.html">
+                                                Chat
                                             </a>
-                                        </div>
-                                        <div class="view-btn delete-btn">
-                                            <img src="../../images/delete-icon.png" alt="delete">Remove
                                         </div>
                                     </td>
                                 </tr>
 
                                 <tr class="table-row">
-                                    <td class="table-data">1</td>
                                     <td class="table-data">
-                                        spartavinoth
+                                        2022/08/012 0:34:16
                                     </td>
                                     <td class="table-data">
-                                        sparta.vinoth@gmail.com
+                                        ST1161CS
                                     </td>
-                                    <td class="table-data">04-08-2022 11:58:58</td>
-                                    <td class="table-data-btn">
+                                    <td class="table-data">PURUSHOTHAMAN PANDURANGAN</td>
+                                    <td class="table-data">chandrumadu1977@gmail.com</td>
+                                    <td class="table-data">0</td>
+                                    <td class="table-data">Kyc Verification</td>
+                                    <td class="table-data">Opened</td>
+                                    <td class="table-data">Document Uploaded</td>
+                                    <td class="table-data table-data-btn">
                                         <div class="view-btn">
-                                            <a href="./subadmin-settings.html">
-                                                <img src="../../images/view-icon.png" alt="view">Edit
+                                            <a href="./support-view.html">
+                                                Chat
                                             </a>
-                                        </div>
-                                        <div class="view-btn delete-btn">
-                                            <img src="../../images/delete-icon.png" alt="delete">Remove
                                         </div>
                                     </td>
                                 </tr>
 
                                 <tr class="table-row">
-                                    <td class="table-data">1</td>
                                     <td class="table-data">
-                                        spartavinoth
+                                        2022/08/012 0:34:16
                                     </td>
                                     <td class="table-data">
-                                        sparta.vinoth@gmail.com
+                                        ST1161CS
                                     </td>
-                                    <td class="table-data">04-08-2022 11:58:58</td>
-                                    <td class="table-data-btn">
+                                    <td class="table-data">PURUSHOTHAMAN PANDURANGAN</td>
+                                    <td class="table-data">chandrumadu1977@gmail.com</td>
+                                    <td class="table-data">0</td>
+                                    <td class="table-data">Kyc Verification</td>
+                                    <td class="table-data">Opened</td>
+                                    <td class="table-data">Document Uploaded</td>
+                                    <td class="table-data table-data-btn">
                                         <div class="view-btn">
-                                            <a href="./subadmin-settings.html">
-                                                <img src="../../images/view-icon.png" alt="view">Edit
+                                            <a href="./support-view.html">
+                                                Chat
                                             </a>
-                                        </div>
-                                        <div class="view-btn delete-btn">
-                                            <img src="../../images/delete-icon.png" alt="delete">Remove
                                         </div>
                                     </td>
                                 </tr>
 
                                 <tr class="table-row">
-                                    <td class="table-data">1</td>
                                     <td class="table-data">
-                                        spartavinoth
+                                        2022/08/012 0:34:16
                                     </td>
                                     <td class="table-data">
-                                        sparta.vinoth@gmail.com
+                                        ST1161CS
                                     </td>
-                                    <td class="table-data">04-08-2022 11:58:58</td>
-                                    <td class="table-data-btn">
+                                    <td class="table-data">PURUSHOTHAMAN PANDURANGAN</td>
+                                    <td class="table-data">chandrumadu1977@gmail.com</td>
+                                    <td class="table-data">0</td>
+                                    <td class="table-data">Kyc Verification</td>
+                                    <td class="table-data">Opened</td>
+                                    <td class="table-data">Document Uploaded</td>
+                                    <td class="table-data table-data-btn">
                                         <div class="view-btn">
-                                            <a href="./subadmin-settings.html">
-                                                <img src="../../images/view-icon.png" alt="view">Edit
+                                            <a href="./support-view.html">
+                                                Chat
                                             </a>
-                                        </div>
-                                        <div class="view-btn delete-btn">
-                                            <img src="../../images/delete-icon.png" alt="delete">Remove
                                         </div>
                                     </td>
                                 </tr>
 
                                 <tr class="table-row">
-                                    <td class="table-data">1</td>
                                     <td class="table-data">
-                                        spartavinoth
+                                        2022/08/012 0:34:16
                                     </td>
                                     <td class="table-data">
-                                        sparta.vinoth@gmail.com
+                                        ST1161CS
                                     </td>
-                                    <td class="table-data">04-08-2022 11:58:58</td>
-                                    <td class="table-data-btn">
+                                    <td class="table-data">PURUSHOTHAMAN PANDURANGAN</td>
+                                    <td class="table-data">chandrumadu1977@gmail.com</td>
+                                    <td class="table-data">0</td>
+                                    <td class="table-data">Kyc Verification</td>
+                                    <td class="table-data">Opened</td>
+                                    <td class="table-data">Document Uploaded</td>
+                                    <td class="table-data table-data-btn">
                                         <div class="view-btn">
-                                            <a href="./subadmin-settings.html">
-                                                <img src="../../images/view-icon.png" alt="view">Edit
+                                            <a href="./support-view.html">
+                                                Chat
                                             </a>
-                                        </div>
-                                        <div class="view-btn delete-btn">
-                                            <img src="../../images/delete-icon.png" alt="delete">Remove
                                         </div>
                                     </td>
                                 </tr>
 
                                 <tr class="table-row">
-                                    <td class="table-data">1</td>
                                     <td class="table-data">
-                                        spartavinoth
+                                        2022/08/012 0:34:16
                                     </td>
                                     <td class="table-data">
-                                        sparta.vinoth@gmail.com
+                                        ST1161CS
                                     </td>
-                                    <td class="table-data">04-08-2022 11:58:58</td>
-                                    <td class="table-data-btn">
+                                    <td class="table-data">PURUSHOTHAMAN PANDURANGAN</td>
+                                    <td class="table-data">chandrumadu1977@gmail.com</td>
+                                    <td class="table-data">0</td>
+                                    <td class="table-data">Kyc Verification</td>
+                                    <td class="table-data">Opened</td>
+                                    <td class="table-data">Document Uploaded</td>
+                                    <td class="table-data table-data-btn">
                                         <div class="view-btn">
-                                            <a href="./subadmin-settings.html">
-                                                <img src="../../images/view-icon.png" alt="view">Edit
+                                            <a href="./support-view.html">
+                                                Chat
                                             </a>
-                                        </div>
-                                        <div class="view-btn delete-btn">
-                                            <img src="../../images/delete-icon.png" alt="delete">Remove
                                         </div>
                                     </td>
                                 </tr>
 
                                 <tr class="table-row">
-                                    <td class="table-data">1</td>
                                     <td class="table-data">
-                                        spartavinoth
+                                        2022/08/012 0:34:16
                                     </td>
                                     <td class="table-data">
-                                        sparta.vinoth@gmail.com
+                                        ST1161CS
                                     </td>
-                                    <td class="table-data">04-08-2022 11:58:58</td>
-                                    <td class="table-data-btn">
+                                    <td class="table-data">PURUSHOTHAMAN PANDURANGAN</td>
+                                    <td class="table-data">chandrumadu1977@gmail.com</td>
+                                    <td class="table-data">0</td>
+                                    <td class="table-data">Kyc Verification</td>
+                                    <td class="table-data">Opened</td>
+                                    <td class="table-data">Document Uploaded</td>
+                                    <td class="table-data table-data-btn">
                                         <div class="view-btn">
-                                            <a href="./subadmin-settings.html">
-                                                <img src="../../images/view-icon.png" alt="view">Edit
+                                            <a href="./support-view.html">
+                                                Chat
                                             </a>
-                                        </div>
-                                        <div class="view-btn delete-btn">
-                                            <img src="../../images/delete-icon.png" alt="delete">Remove
                                         </div>
                                     </td>
                                 </tr>
 
                                 <tr class="table-row">
-                                    <td class="table-data">1</td>
                                     <td class="table-data">
-                                        spartavinoth
+                                        2022/08/012 0:34:16
                                     </td>
                                     <td class="table-data">
-                                        sparta.vinoth@gmail.com
+                                        ST1161CS
                                     </td>
-                                    <td class="table-data">04-08-2022 11:58:58</td>
-                                    <td class="table-data-btn">
+                                    <td class="table-data">PURUSHOTHAMAN PANDURANGAN</td>
+                                    <td class="table-data">chandrumadu1977@gmail.com</td>
+                                    <td class="table-data">0</td>
+                                    <td class="table-data">Kyc Verification</td>
+                                    <td class="table-data">Opened</td>
+                                    <td class="table-data">Document Uploaded</td>
+                                    <td class="table-data table-data-btn">
                                         <div class="view-btn">
-                                            <a href="./subadmin-settings.html">
-                                                <img src="../../images/view-icon.png" alt="view">Edit
+                                            <a href="./support-view.html">
+                                                Chat
                                             </a>
-                                        </div>
-                                        <div class="view-btn delete-btn">
-                                            <img src="../../images/delete-icon.png" alt="delete">Remove
                                         </div>
                                     </td>
                                 </tr>
 
                                 <tr class="table-row">
-                                    <td class="table-data">1</td>
                                     <td class="table-data">
-                                        spartavinoth
+                                        2022/08/012 0:34:16
                                     </td>
                                     <td class="table-data">
-                                        sparta.vinoth@gmail.com
+                                        ST1161CS
                                     </td>
-                                    <td class="table-data">04-08-2022 11:58:58</td>
-                                    <td class="table-data-btn">
+                                    <td class="table-data">PURUSHOTHAMAN PANDURANGAN</td>
+                                    <td class="table-data">chandrumadu1977@gmail.com</td>
+                                    <td class="table-data">0</td>
+                                    <td class="table-data">Kyc Verification</td>
+                                    <td class="table-data">Opened</td>
+                                    <td class="table-data">Document Uploaded</td>
+                                    <td class="table-data table-data-btn">
                                         <div class="view-btn">
-                                            <a href="./subadmin-settings.html">
-                                                <img src="../../images/view-icon.png" alt="view">Edit
+                                            <a href="./support-view.html">
+                                                Chat
                                             </a>
-                                        </div>
-                                        <div class="view-btn delete-btn">
-                                            <img src="../../images/delete-icon.png" alt="delete">Remove
                                         </div>
                                     </td>
                                 </tr>
 
                                 <tr class="table-row">
-                                    <td class="table-data">1</td>
                                     <td class="table-data">
-                                        spartavinoth
+                                        2022/08/012 0:34:16
                                     </td>
                                     <td class="table-data">
-                                        sparta.vinoth@gmail.com
+                                        ST1161CS
                                     </td>
-                                    <td class="table-data">04-08-2022 11:58:58</td>
-                                    <td class="table-data-btn">
+                                    <td class="table-data">PURUSHOTHAMAN PANDURANGAN</td>
+                                    <td class="table-data">chandrumadu1977@gmail.com</td>
+                                    <td class="table-data">0</td>
+                                    <td class="table-data">Kyc Verification</td>
+                                    <td class="table-data">Opened</td>
+                                    <td class="table-data">Document Uploaded</td>
+                                    <td class="table-data table-data-btn">
                                         <div class="view-btn">
-                                            <a href="./subadmin-settings.html">
-                                                <img src="../../images/view-icon.png" alt="view">Edit
+                                            <a href="./support-view.html">
+                                                Chat
                                             </a>
-                                        </div>
-                                        <div class="view-btn delete-btn">
-                                            <img src="../../images/delete-icon.png" alt="delete">Remove
                                         </div>
                                     </td>
                                 </tr>
 
                                 <tr class="table-row">
-                                    <td class="table-data">1</td>
                                     <td class="table-data">
-                                        spartavinoth
+                                        2022/08/012 0:34:16
                                     </td>
                                     <td class="table-data">
-                                        sparta.vinoth@gmail.com
+                                        ST1161CS
                                     </td>
-                                    <td class="table-data">04-08-2022 11:58:58</td>
-                                    <td class="table-data-btn">
+                                    <td class="table-data">PURUSHOTHAMAN PANDURANGAN</td>
+                                    <td class="table-data">chandrumadu1977@gmail.com</td>
+                                    <td class="table-data">0</td>
+                                    <td class="table-data">Kyc Verification</td>
+                                    <td class="table-data">Opened</td>
+                                    <td class="table-data">Document Uploaded</td>
+                                    <td class="table-data table-data-btn">
                                         <div class="view-btn">
-                                            <a href="./subadmin-settings.html">
-                                                <img src="../../images/view-icon.png" alt="view">Edit
+                                            <a href="./support-view.html">
+                                                Chat
                                             </a>
                                         </div>
-                                        <div class="view-btn delete-btn">
-                                            <img src="../../images/delete-icon.png" alt="delete">Remove
+                                    </td>
+                                </tr>
+
+                                <tr class="table-row">
+                                    <td class="table-data">
+                                        2022/08/012 0:34:16
+                                    </td>
+                                    <td class="table-data">
+                                        ST1161CS
+                                    </td>
+                                    <td class="table-data">PURUSHOTHAMAN PANDURANGAN</td>
+                                    <td class="table-data">chandrumadu1977@gmail.com</td>
+                                    <td class="table-data">0</td>
+                                    <td class="table-data">Kyc Verification</td>
+                                    <td class="table-data">Opened</td>
+                                    <td class="table-data">Document Uploaded</td>
+                                    <td class="table-data table-data-btn">
+                                        <div class="view-btn">
+                                            <a href="./support-view.html">
+                                                Chat
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="table-row">
+                                    <td class="table-data">
+                                        2022/08/012 0:34:16
+                                    </td>
+                                    <td class="table-data">
+                                        ST1161CS
+                                    </td>
+                                    <td class="table-data">PURUSHOTHAMAN PANDURANGAN</td>
+                                    <td class="table-data">chandrumadu1977@gmail.com</td>
+                                    <td class="table-data">0</td>
+                                    <td class="table-data">Kyc Verification</td>
+                                    <td class="table-data">Opened</td>
+                                    <td class="table-data">Document Uploaded</td>
+                                    <td class="table-data table-data-btn">
+                                        <div class="view-btn">
+                                            <a href="./support-view.html">
+                                                Chat
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="table-row">
+                                    <td class="table-data">
+                                        2022/08/012 0:34:16
+                                    </td>
+                                    <td class="table-data">
+                                        ST1161CS
+                                    </td>
+                                    <td class="table-data">PURUSHOTHAMAN PANDURANGAN</td>
+                                    <td class="table-data">chandrumadu1977@gmail.com</td>
+                                    <td class="table-data">0</td>
+                                    <td class="table-data">Kyc Verification</td>
+                                    <td class="table-data">Opened</td>
+                                    <td class="table-data">Document Uploaded</td>
+                                    <td class="table-data table-data-btn">
+                                        <div class="view-btn">
+                                            <a href="./support-view.html">
+                                                Chat
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="table-row">
+                                    <td class="table-data">
+                                        2022/08/012 0:34:16
+                                    </td>
+                                    <td class="table-data">
+                                        ST1161CS
+                                    </td>
+                                    <td class="table-data">PURUSHOTHAMAN PANDURANGAN</td>
+                                    <td class="table-data">chandrumadu1977@gmail.com</td>
+                                    <td class="table-data">0</td>
+                                    <td class="table-data">Kyc Verification</td>
+                                    <td class="table-data">Opened</td>
+                                    <td class="table-data">Document Uploaded</td>
+                                    <td class="table-data table-data-btn">
+                                        <div class="view-btn">
+                                            <a href="./support-view.html">
+                                                Chat
+                                            </a>
                                         </div>
                                     </td>
                                 </tr>

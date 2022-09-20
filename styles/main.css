@@ -817,6 +817,7 @@ tbody tr:hover {
 .txn-history-table {
   margin-top: 3rem;
   width: 100%;
+  overflow-x: auto;
 }
 .txn-history-table table {
   width: 100%;
@@ -1298,4 +1299,92 @@ tbody tr:hover {
 }
 .login-container .login-card .admin-login-form .login-btn:hover {
   color: black;
+}
+
+.ticket-form {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+}
+.ticket-form p {
+  min-width: 10rem;
+}
+.ticket-form .view-btn {
+  outline: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.support-messages-container {
+  margin: 2rem 0;
+}
+.support-messages-container .message-by {
+  border-top: 1px solid #002941;
+  border-bottom: 1px solid #002941;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.support-messages-container .message-field .messages {
+  overflow-y: auto;
+  height: 50vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.support-messages-container .message-field .messages .msg-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.support-messages-container .message-field .messages .msg-container .avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #002941;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.support-messages-container .message-field .messages .msg-container .message-text {
+  padding: 1rem 2rem;
+  background-color: #002941;
+  border-radius: 2rem;
+  max-width: 35%;
+}
+.support-messages-container .message-field .messages .admin-response {
+  flex-direction: row-reverse;
+}
+.support-messages-container .message-field .messages .admin-response .message-text,
+.support-messages-container .message-field .messages .admin-response .avatar {
+  background-color: #107E8E;
+}
+.support-messages-container .message-field .message-write {
+  border-top: 1px solid rgba(233, 235, 239, 0.6705882353);
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 2rem;
+}
+.support-messages-container .message-field .message-write textarea {
+  width: 90%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 1rem;
+  color: #ffffff;
+  resize: none;
+}
+.support-messages-container .message-field .message-write .send-btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+  color: #ffffff;
+  background: rgb(12, 53, 68);
+  background: linear-gradient(180deg, rgb(12, 53, 68) 0%, rgb(48, 86, 102) 100%);
 }/*# sourceMappingURL=main.css.map */
