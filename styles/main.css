@@ -1347,17 +1347,22 @@ tbody tr:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 .support-messages-container .message-field .messages .msg-container .message-text {
   padding: 1rem 2rem;
   background-color: #002941;
-  border-radius: 2rem;
+  border-radius: 2rem 2rem 2rem 0rem;
   max-width: 35%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 .support-messages-container .message-field .messages .admin-response {
   flex-direction: row-reverse;
 }
-.support-messages-container .message-field .messages .admin-response .message-text,
+.support-messages-container .message-field .messages .admin-response .message-text {
+  border-radius: 2rem 2rem 0rem 2rem;
+  background-color: #107E8E;
+}
 .support-messages-container .message-field .messages .admin-response .avatar {
   background-color: #107E8E;
 }
