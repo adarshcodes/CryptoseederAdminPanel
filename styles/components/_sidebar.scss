@@ -8,6 +8,13 @@
 	font-size: 1.35rem;
 	padding: 2.5rem 1rem 10rem 1rem;
 	overflow-y: auto;
+	transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) all .3s;
+
+	@media screen and (max-width: 770px) {
+		position: fixed;
+		margin-top: 5.5rem;
+		transform: translateX(-100%);
+	}
 
 	&::-webkit-scrollbar-track {
 		background-color: $color-primary-blue;
@@ -77,4 +84,8 @@
 
 .active {
 	color: $color-secondary-yellow  !important;
+}
+
+.sidebar-slide {
+	transform: translateX(0);
 }

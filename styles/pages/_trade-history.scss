@@ -5,6 +5,12 @@
         @include flex-row;
         gap: 3rem;
     }
+
+    @media screen and (max-width: 400px) {
+        align-items: flex-start;
+        gap: 1.5rem;
+        flex-direction: column;
+    }
 }
 
 .trade-history-table {

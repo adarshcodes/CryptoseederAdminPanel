@@ -1,8 +1,24 @@
 .txn-history-head {
     @include flex-row-spacebetween;
 
+    @media screen and (max-width: 1050px) {
+        flex-direction: column-reverse;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
     .txn-searchbar {
         width: 50%;
+
+        @media screen and (max-width: 1050px) {
+            width: 90%;
+        }
+
+        @media screen and (max-width: 600px) {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
 
         .search-input {
             width: 70%;
@@ -101,8 +117,17 @@
     margin-top: 3rem;
     font-size: 1.35rem;
 
+    @media screen and (max-width: 1050px) {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
     .fee-wallet {
         width: 50%;
+
+        @media screen and (max-width: 1050px) {
+            width: 100%;
+        }
 
         .head-txn-view {
             display: inline-block;
@@ -134,10 +159,19 @@
                 @include border-right-grad;
                 padding-right: 1rem;
 
+                @media screen and (max-width: 1050px) {
+                    border-right: none;
+                }
+
                 .input-row {
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-end;
+
+                    @media screen and (max-width: 770px) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
 
                     input {
                         width: 70%;
@@ -148,7 +182,9 @@
                         border-bottom: solid 2px #1F858E;
                         color: $color-primary-white;
 
-
+                        @media screen and (max-width: 770px) {
+                            width: 100%;
+                        }
                     }
                 }
 
@@ -168,6 +204,10 @@
         .txn-table {
             padding: 3rem;
             overflow-x: auto;
+
+            @media screen and (max-width: 1050px) {
+                padding: 0;
+            }
 
             table {
                 width: 100%;

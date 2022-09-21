@@ -2,6 +2,10 @@
 	margin-bottom: 0.5rem;
 	position: fixed;
 	width: 100%;
+
+	@media screen and (max-width: 770px) {
+		z-index: 1000;
+	}
 }
 
 .navbar {
@@ -12,10 +16,30 @@
 	&__timer {
 		@include grad-1;
 		padding: 1rem 3rem;
+
+		@media screen and (max-width: 770px) {
+			font-size: 1.5rem;
+			padding: .6rem 2rem;
+		}
+	}
+
+	&__logo {
+		@media screen and (max-width: 770px) {
+			width: 15rem;
+		}
 	}
 }
 
 
 .arrow-down {
 	font-size: 1.1rem;
+}
+
+.ham-menu {
+	display: none;
+	font-size: 2.5rem;
+
+	@media screen and (max-width: 770px) {
+		display: block;
+	}
 }

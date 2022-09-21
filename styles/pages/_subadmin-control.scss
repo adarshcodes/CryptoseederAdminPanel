@@ -19,13 +19,27 @@
         display: flex;
         gap: 1rem;
 
+        @media screen and (max-width: 1050px) {
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+
         .admin-setting-box {
             width: 33.33%;
             padding: 1rem;
             font-size: 1.2rem;
 
+            @media screen and (max-width: 1050px) {
+                width: 100%;
+                padding: 0;
+            }
+
             &:not(:last-child) {
                 @include border-right-grad;
+
+                @media screen and (max-width: 1050px) {
+                    border: none;
+                }
             }
 
             .subadmin-heading {
@@ -83,6 +97,11 @@
                             @include flex-row-spacebetween;
                             align-items: flex-start;
 
+                            @media screen and (max-width: 600px) {
+                                gap: 1rem;
+                                flex-direction: column;
+                            }
+
                             li {
                                 margin: .5rem 0;
                                 display: flex;
@@ -102,10 +121,21 @@
                             justify-content: space-between;
                             margin-bottom: 1rem;
 
+                            @media screen and(max-width: 600px) {
+                                flex-direction: column;
+                                gap: 1rem;
+                                margin-bottom: 2rem;
+                            }
+
                             ul {
                                 display: flex;
                                 justify-content: space-between;
                                 gap: 2rem;
+
+                                @media screen and(max-width: 600px) {
+                                    flex-direction: column;
+                                    gap: 1rem;
+                                }
 
                                 li {
                                     display: flex;

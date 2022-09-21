@@ -2,17 +2,34 @@
 	.coin-setting {
 		display: flex;
 		flex-direction: row !important;
+
+		@media screen and (max-width: 1050px) {
+			flex-direction: column !important;
+			gap: 4rem;
+		}
 	}
 
 	.coin-content {
 		width: 50%;
 
+		@media screen and (max-width: 1050px) {
+			width: 100%;
+		}
+
 		&:not(:last-child) {
 			@include border-right;
+
+			@media screen and (max-width: 1050px) {
+				border-right: none;
+			}
 		}
 
 		&:last-child {
 			padding-left: 3rem;
+
+			@media screen and (max-width: 1050px) {
+				padding-left: 0;
+			}
 		}
 
 		.coin-setting-table {

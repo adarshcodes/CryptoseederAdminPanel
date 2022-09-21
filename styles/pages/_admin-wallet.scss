@@ -3,10 +3,25 @@
         width: 100%;
         display: flex;
 
+        @media screen and (max-width: 1050px) {
+            flex-wrap: wrap;
+            gap: 10rem;
+            margin-bottom: 10rem;
+        }
+
         .wallet-box {
             width: 33%;
             padding: 0 2rem;
             @include border-right-grad;
+
+            @media screen and (max-width: 1050px) {
+                width: 100%;
+                border-right: none;
+            }
+
+            @media screen and (max-width: 600px) {
+                padding: 0;
+            }
 
             .wallet-head {
                 margin-bottom: 1.5rem;
@@ -58,6 +73,12 @@
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+
+                        @media screen and (max-width: 600px) {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 1rem;
+                        }
                     }
 
                     input,
@@ -70,6 +91,10 @@
                         border-bottom: solid 2px #1F858E;
                         color: #ffffff;
                         font-size: 1.2rem;
+
+                        @media screen and (max-width: 600px) {
+                            width: 100%;
+                        }
                     }
 
                     .form-btn {

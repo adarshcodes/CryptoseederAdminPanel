@@ -15,3 +15,12 @@ kycBtn.forEach(function (btn) {
 		});
 	});
 });
+
+// Sidebar toggle
+
+const ham = document.querySelector(".ham-menu");
+const sidebar = document.querySelector(".sidebar");
+
+ham.addEventListener("click", function () {
+	sidebar.classList.toggle("sidebar-slide");
+});

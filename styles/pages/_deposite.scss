@@ -1,6 +1,14 @@
 .deposite-container {
     .deposite-head {
         @include flex-row-spacebetween;
+
+        @media screen and (max-width:1050px) {
+            flex-wrap: wrap;
+        }
+
+        @media screen and (max-width: 770px) {
+            gap: 2rem;
+        }
     }
 
     .deposite-table {
@@ -31,10 +39,24 @@
     margin-top: 5rem;
     width: 60%;
 
+    @media screen and (max-width: 770px) {
+        width: 80%;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 100%;
+    }
+
     .input-row {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+        }
 
         input {
             width: 70%;
@@ -48,6 +70,10 @@
 
             &::placeholder {
                 color: rgb(180, 180, 180);
+            }
+
+            @media screen and (max-width: 500px) {
+                width: 100%;
             }
         }
     }

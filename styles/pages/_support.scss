@@ -33,6 +33,10 @@
             @include flex-column;
             gap: 2rem;
 
+            @media screen and (max-width: 500px) {
+                padding: 2rem 0;
+            }
+
             .msg-container {
                 @include flex-row;
                 align-items: flex-end;
@@ -53,6 +57,10 @@
                     border-radius: 2rem 2rem 2rem 0rem;
                     max-width: 35%;
                     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+
+                    @media screen and (max-width: 500px) {
+                        max-width: 100%;
+                    }
                 }
             }
 

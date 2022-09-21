@@ -40,11 +40,9 @@
 			padding: 0.8rem 0;
 			border-bottom: 2px solid;
 			border-image-slice: 1;
-			border-image-source: linear-gradient(
-				90deg,
-				rgba(0, 40, 63, 1) 0%,
-				rgba(130, 16, 20, 0) 100%
-			);
+			border-image-source: linear-gradient(90deg,
+					rgba(0, 40, 63, 1) 0%,
+					rgba(130, 16, 20, 0) 100%);
 
 			span {
 				width: 30%;
@@ -65,9 +63,19 @@
 		display: flex;
 		width: 100%;
 
+		@media screen and (max-width: 1050px) {
+			flex-direction: column;
+			gap: 5rem;
+		}
+
 		.kyc-details {
 			width: 45%;
 			@include border-right;
+
+			@media screen and (max-width: 1050px) {
+				width: 100%;
+				border-right: none;
+			}
 		}
 
 		.kyc-items {
@@ -99,6 +107,10 @@
 			justify-content: center;
 			align-items: center;
 
+			@media screen and (max-width: 1050px) {
+				width: 100%;
+			}
+
 			h2 {
 				font-size: 2.35rem;
 				font-weight: 300;
@@ -108,7 +120,7 @@
 			.id-card-preview {
 				background-color: $color-primary-white;
 				width: 70%;
-				height: 40%;
+				height: 25rem;
 				margin-top: 1rem;
 			}
 		}
@@ -134,11 +146,14 @@
 		width: 60%;
 		border-right: 6px solid;
 		border-image-slice: 1;
-		border-image-source: linear-gradient(
-			180deg,
-			rgba(0, 40, 63, 1) 0%,
-			rgba(130, 16, 20, 0) 103%
-		);
+		border-image-source: linear-gradient(180deg,
+				rgba(0, 40, 63, 1) 0%,
+				rgba(130, 16, 20, 0) 103%);
+
+		@media screen and (max-width: 1050px) {
+			width: 100%;
+			border-right: none;
+		}
 
 		.wallet-details {
 			margin-bottom: 1rem;
@@ -146,9 +161,19 @@
 
 		.wallet-list {
 			padding: 1.5rem;
-			width: 75%;
+			width: 90%;
+
+			@media screen and (max-width: 1050px) {
+				width: 100%;
+			}
+
 			li {
 				display: flex;
+
+				@media screen and (max-width: 1350px) {
+					flex-direction: column;
+					gap: 1rem;
+				}
 
 				&:not(:last-child) {
 					margin-bottom: 1rem;
@@ -158,6 +183,7 @@
 					width: 40%;
 				}
 			}
+
 			margin-bottom: 3rem;
 
 			&-grad {
