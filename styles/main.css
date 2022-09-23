@@ -1552,7 +1552,8 @@ tbody tr:hover {
 }
 
 .login-container {
-  background: linear-gradient(90deg, rgb(15, 97, 165) 35%, rgb(26, 54, 154) 100%);
+  background: #07313f;
+  background-attachment: fixed;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -1566,7 +1567,7 @@ tbody tr:hover {
   padding: 1rem;
   border-radius: 1rem;
   color: #fff;
-  background: rgb(13, 38, 95);
+  background-color: #145366;
 }
 .login-container .login-card .logo-img {
   max-width: 16rem;
@@ -1576,7 +1577,7 @@ tbody tr:hover {
 .login-container .login-card .admin-box {
   padding: 1.25rem;
   border-radius: 2px;
-  background-color: rgb(15, 97, 165);
+  background-color: #0d7696;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
@@ -1629,7 +1630,7 @@ tbody tr:hover {
   cursor: pointer;
   width: 4rem;
   height: 4rem;
-  background-color: rgb(15, 97, 165);
+  background-color: #0d7696;
   color: #fff;
   transition: all 0.3s;
 }
