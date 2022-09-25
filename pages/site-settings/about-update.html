@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin - Terms-Service Setting | Cryptoseeders</title>
+    <title>Admin - About Setting | Cryptoseeders</title>
     <link rel="stylesheet" href="../../styles/main.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,6 +15,7 @@
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/a0bc19c04a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../richtexteditor/rte_theme_default.css" />
 </head>
 
 <body>
@@ -292,50 +293,34 @@
             <!-- End of sidebar -->
 
             <div class="dashboard">
-                <section class="users-data deposite-container" id="users-data">
+                <section class="users-data deposite-container">
                     <div class="deposite-head">
-                        <h1 class="heading-user-data">Terms-Service Settings</h1>
+                        <h1 class="heading-user-data">Update About-Us</h1>
                     </div>
 
-                    <div class="view-btn">
-                        <a href="./terms-add.html">
-                            <i class="fa-solid fa-circle-plus"></i> Add More
-                        </a>
-                    </div>
+                    <div class="banner-update-container">
+                        <form class="banner-form">
+                            <div class="row">
+                                <p>Title</p>
+                                <input type="text" id="title" value="About Us">
+                            </div>
 
-                    <div class="deposite-table">
-                        <table class="txn-table">
-                            <thead>
-                                <tr>
-                                    <th>S.No.</th>
-                                    <th>Title</th>
-                                    <th>Short Desc</th>
-                                    <th>Long Desc</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
+                            <div class="row">
+                                <p>Short Description</p>
 
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>TERMS OF SERVICE</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="table-data-btn">
-                                        <div class="view-btn">
-                                            <a href="./terms-update.html">
-                                                <img src="../../images/view-icon.png" alt="view">View/Edit
-                                            </a>
-                                        </div>
-                                        <div class="view-btn delete-btn">
-                                            <img src="../../images/delete-icon.png" alt="delete">Delete
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                <div id="#div_editor-about-update-sdesc" style="width: 100%; min-height: 40rem">
+                                </div>
+                            </div>
 
-                        <div id="pageNavPosition" class="pager-nav"></div>
+                            <div class="row">
+                                <p>Description</p>
+
+                                <div id="#div_editor-about-update-desc" style="width: 100%; min-height: 40rem">
+                                </div>
+                            </div>
+
+                            <button class=" submit-btn">Update Content</button>
+                        </form>
                     </div>
                 </section>
             </div>
@@ -343,6 +328,12 @@
         <!-- End of Main -->
     </div>
 
+    <script type="text/javascript" src="../../richtexteditor/rte.js"></script>
+    <script type="text/javascript" src='../../richtexteditor/plugins/all_plugins.js'></script>
+    <script>
+        var editor1 = new RichTextEditor("#div_editor-about-update-sdesc");
+        var editor1 = new RichTextEditor("#div_editor-about-update-desc");
+    </script>
     <script src="../../scripts/pages.js" defer></script>
     <script src="../../scripts/index.js"></script>
 </body>
