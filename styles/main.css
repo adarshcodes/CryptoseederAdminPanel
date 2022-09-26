@@ -214,6 +214,16 @@ table {
   padding: 0.5rem 1rem;
 }
 
+.submit-btn {
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  background: rgb(12, 53, 68);
+  background: linear-gradient(180deg, rgb(12, 53, 68) 0%, rgb(48, 86, 102) 100%);
+  cursor: pointer;
+  color: #ffffff;
+}
+
 .transparent-select {
   background-color: transparent;
   color: #ffffff;
@@ -1739,4 +1749,30 @@ tbody tr:hover {
   color: #ffffff;
   background: rgb(12, 53, 68);
   background: linear-gradient(180deg, rgb(12, 53, 68) 0%, rgb(48, 86, 102) 100%);
+}
+
+.messages-container .user-msg-form select {
+  background: linear-gradient(180deg, rgb(12, 53, 68) 0%, rgb(48, 86, 102) 100%);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+  outline: none;
+  border: none;
+}
+.messages-container .user-msg-form select option {
+  background-color: #0a3140;
+}
+.messages-container .user-msg-form .row {
+  display: flex;
+  margin: 1rem 0;
+}
+.messages-container .user-msg-form .row .row-label {
+  width: 30%;
+}
+.messages-container .editor .desc {
+  margin-bottom: 1rem;
+}
+.messages-container .editor .submit-btn {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
 }/*# sourceMappingURL=main.css.map */

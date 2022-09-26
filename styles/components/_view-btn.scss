@@ -8,3 +8,13 @@
     @include grad-2;
     padding: 0.5rem 1rem;
 }
+
+.submit-btn {
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    background: rgb(12, 53, 68);
+    background: linear-gradient(180deg, rgb(12, 53, 68) 0%, rgb(48, 86, 102) 100%);
+    cursor: pointer;
+    color: #ffffff;
+}

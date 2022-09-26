@@ -1,0 +1,37 @@
+.messages-container {
+    .user-msg-form {
+
+        select {
+            background: linear-gradient(180deg, rgb(12, 53, 68) 0%, rgb(48, 86, 102) 100%);
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            border-radius: 0;
+            outline: none;
+            border: none;
+
+            option {
+                background-color: $color-primary-green;
+            }
+        }
+
+        .row {
+            display: flex;
+            margin: 1rem 0;
+
+            .row-label {
+                width: 30%;
+            }
+        }
+    }
+
+    .editor {
+        .desc {
+            margin-bottom: 1rem;
+        }
+
+        .submit-btn {
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+        }
+    }
+}
