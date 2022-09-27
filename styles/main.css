@@ -222,6 +222,7 @@ table {
   background: linear-gradient(180deg, rgb(12, 53, 68) 0%, rgb(48, 86, 102) 100%);
   cursor: pointer;
   color: #ffffff;
+  align-self: flex-start;
 }
 
 .transparent-select {
@@ -1775,4 +1776,31 @@ tbody tr:hover {
 .messages-container .editor .submit-btn {
   margin-top: 2rem;
   padding: 1rem 2rem;
+}
+
+.banner-update-container .banner-form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.banner-update-container .banner-form .row {
+  display: flex;
+  width: 100%;
+}
+.banner-update-container .banner-form .row p {
+  width: 20rem;
+}
+.banner-update-container .banner-form .row input {
+  flex: 1;
+  padding: 0.5rem;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px #1F858E;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.editor {
+  z-index: 1;
 }/*# sourceMappingURL=main.css.map */

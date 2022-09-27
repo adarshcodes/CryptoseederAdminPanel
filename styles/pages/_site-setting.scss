@@ -1,0 +1,31 @@
+.banner-update-container {
+    .banner-form {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        .row {
+            display: flex;
+            width: 100%;
+
+            p {
+                width: 20rem;
+            }
+
+            input {
+                flex: 1;
+                padding: 0.5rem;
+                outline: none;
+                background-color: transparent;
+                border: none;
+                border-bottom: solid 2px #1F858E;
+                color: #ffffff;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.editor {
+    z-index: 1;
+}
