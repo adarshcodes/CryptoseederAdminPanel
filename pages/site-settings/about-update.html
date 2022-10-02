@@ -15,7 +15,6 @@
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/a0bc19c04a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../richtexteditor/rte_theme_default.css" />
 </head>
 
 <body>
@@ -308,15 +307,15 @@
                             <div class="row">
                                 <p>Short Description</p>
 
-                                <div id="#div_editor-about-update-sdesc" style="width: 100%; min-height: 40rem">
-                                </div>
+                                <textarea name="div_editor-about-update-sdesc"
+                                    id="div_editor-about-update-sdesc"></textarea>
                             </div>
 
                             <div class="row">
                                 <p>Description</p>
 
-                                <div id="#div_editor-about-update-desc" style="width: 100%; min-height: 40rem">
-                                </div>
+                                <textarea name="div_editor-about-update-desc"
+                                    id="div_editor-about-update-desc"></textarea>
                             </div>
 
                             <button class=" submit-btn">Update Content</button>
@@ -328,12 +327,12 @@
         <!-- End of Main -->
     </div>
 
-    <script type="text/javascript" src="../../richtexteditor/rte.js"></script>
-    <script type="text/javascript" src='../../richtexteditor/plugins/all_plugins.js'></script>
+    <script src="//cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
     <script>
-        var editor1 = new RichTextEditor("#div_editor-about-update-sdesc");
-        var editor1 = new RichTextEditor("#div_editor-about-update-desc");
+        CKEDITOR.replace('div_editor-about-update-sdesc');
+        CKEDITOR.replace('div_editor-about-update-desc');
     </script>
+
     <script src="../../scripts/pages.js" defer></script>
     <script src="../../scripts/index.js"></script>
 </body>

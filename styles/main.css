@@ -1801,6 +1801,6 @@ tbody tr:hover {
   font-size: 1.5rem;
 }
 
-.editor {
-  z-index: 1;
+.cke {
+  flex: 1;
 }/*# sourceMappingURL=main.css.map */
