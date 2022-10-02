@@ -50,11 +50,7 @@ table {
   margin-bottom: 0.5rem;
   position: fixed;
   width: 100%;
-}
-@media screen and (max-width: 770px) {
-  .header {
-    z-index: 1000;
-  }
+  z-index: 1000;
 }
 
 .navbar {
