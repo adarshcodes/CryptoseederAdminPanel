@@ -1288,37 +1288,37 @@ tbody tr:hover {
   font-size: 1.2rem;
 }
 
-.deposite-container .deposite-head {
+.deposit-container .deposit-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 @media screen and (max-width: 1050px) {
-  .deposite-container .deposite-head {
+  .deposit-container .deposit-head {
     flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 770px) {
-  .deposite-container .deposite-head {
+  .deposit-container .deposit-head {
     gap: 2rem;
   }
 }
-.deposite-container .deposite-table {
+.deposit-container .deposit-table {
   width: 100%;
   overflow-x: auto;
   margin-top: 4rem;
 }
-.deposite-container .deposite-table table {
+.deposit-container .deposit-table table {
   width: 100%;
   font-size: 1.5rem;
 }
-.deposite-container .deposite-table table thead tr th,
-.deposite-container .deposite-table table tbody tr td {
+.deposit-container .deposit-table table thead tr th,
+.deposit-container .deposit-table table tbody tr td {
   padding: 1rem 0.5rem;
   text-align: center;
 }
 
-.deposite-view-form {
+.deposit-view-form {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -1329,28 +1329,28 @@ tbody tr:hover {
   width: 60%;
 }
 @media screen and (max-width: 770px) {
-  .deposite-view-form {
+  .deposit-view-form {
     width: 80%;
   }
 }
 @media screen and (max-width: 500px) {
-  .deposite-view-form {
+  .deposit-view-form {
     width: 100%;
   }
 }
-.deposite-view-form .input-row {
+.deposit-view-form .input-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 @media screen and (max-width: 500px) {
-  .deposite-view-form .input-row {
+  .deposit-view-form .input-row {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
   }
 }
-.deposite-view-form .input-row input {
+.deposit-view-form .input-row input {
   width: 70%;
   padding: 0.5rem;
   outline: none;
@@ -1360,15 +1360,15 @@ tbody tr:hover {
   color: #ffffff;
   font-size: 1.3rem;
 }
-.deposite-view-form .input-row input::placeholder {
+.deposit-view-form .input-row input::placeholder {
   color: rgb(180, 180, 180);
 }
 @media screen and (max-width: 500px) {
-  .deposite-view-form .input-row input {
+  .deposit-view-form .input-row input {
     width: 100%;
   }
 }
-.deposite-view-form .submit-btn {
+.deposit-view-form .submit-btn {
   background: rgb(12, 53, 68);
   background: linear-gradient(180deg, rgb(12, 53, 68) 0%, rgb(48, 86, 102) 100%);
   color: #ffffff;
