@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin - Deposite View | Cryptoseeders</title>
+    <title>Admin - MoneyGo (EUR) deposit | Cryptoseeders</title>
     <link rel="stylesheet" href="../../styles/main.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -88,25 +88,25 @@
                     </li>
 
                     <li class="sidebar-items ">
-                        <a href="./deposite-btc.html" class="active"><img src="../../images/deposite-icon.png"
-                                alt="Deposite" />
-                            Deposite <i class="fa-solid fa-angle-down arrow-down"></i></a>
+                        <a href="./deposit-btc.html" class="active"><img src="../../images/deposit-icon.png"
+                                alt="deposit" />
+                            deposit <i class="fa-solid fa-angle-down arrow-down"></i></a>
 
                         <ul class="sidebar-drop-list">
                             <li class="sidebar-drop-items">
-                                <a href="./deposite-btc.html">BTC</a>
+                                <a href="./deposit-btc.html">BTC</a>
                             </li>
                             <li class="sidebar-drop-items">
-                                <a href="./deposite-eth.html">ETH</a>
+                                <a href="./deposit-eth.html">ETH</a>
                             </li>
                             <li class="sidebar-drop-items">
-                                <a href="./deposite-trx.html">TRX</a>
+                                <a href="./deposit-trx.html">TRX</a>
                             </li>
                             <li class="sidebar-drop-items">
-                                <a href="./deposite-usdt.html">USDT</a>
+                                <a href="./deposit-usdt.html">USDT</a>
                             </li>
                             <li class="sidebar-drop-items">
-                                <a href="./deposite-inr.html">INR</a>
+                                <a href="./deposit-inr.html">INR</a>
                             </li>
                             <li class="sidebar-drop-items">
                                 <a href="./astro-inr.html">Astropay
@@ -292,57 +292,233 @@
             <!-- End of sidebar -->
 
             <div class="dashboard">
-                <section class="users-data deposite-container" id="users-data">
-                    <div class="deposite-head">
-                        <p class="deposite-heading">
-                            <a href="./deposite-btc.html"><img src="../../images/back-icon.png" alt="back">
-                                Back to deposite history</a>
-                        </p>
+                <section class="users-data deposit-container" id="users-data">
+                    <div class="deposit-head">
+                        <h1 class="heading-user-data">MoneyGo(EUR) Deposit History</h1>
+
+                        <div class="filter">
+                            <button class="filter-btn">Pending</button>
+                            <button class="filter-btn">Approved</button>
+                            <button class="filter-btn">Rejected</button>
+                        </div>
                     </div>
 
-                    <div class="deposite-view">
-                        <form class="deposite-view-form">
-                            <div class="input-row">
-                                <label for="username">Username</label>
-                                <input type="text" id="username" value="Raja">
-                            </div>
+                    <div class="deposit-table">
+                        <table class="txn-table wp-list-table widefat striped posts" id="pager">
+                            <thead>
+                                <tr>
+                                    <th>S.No.</th>
+                                    <th>
+                                        Date/Time
+                                    </th>
+                                    <th>Username</th>
+                                    <th>deposit Amount(EUR)</th>
+                                    <th>Credit Amount(EUR)</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
 
-                            <div class="input-row">
-                                <label for="recipientAddress">Recipient Address</label>
-                                <input type="text" id="recipientAddress"
-                                    value="0x5b892cbf0cccf74733809125acc04ed87841c3ef">
-                            </div>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>25000.00</td>
+                                    <td>25000.00</td>
+                                    <td>Approved by admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./deposit-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
 
-                            <div class="input-row">
-                                <label for="senderAddress">Sender Address</label>
-                                <input type="text" id="senderAddress"
-                                    value="0xdfd5293d8e347dfe59e90efd55b2956a1343963d">
-                            </div>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>25000.00</td>
+                                    <td>25000.00</td>
+                                    <td>Approved by admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./deposit-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
 
-                            <div class="input-row">
-                                <label for="txnID">Transaction ID</label>
-                                <input type="text" id="txnID"
-                                    value="0xf150eaea661e9342c118c24eb5ab2b9c94eee5ae5467014a6abdda944d8f2a98">
-                            </div>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>25000.00</td>
+                                    <td>25000.00</td>
+                                    <td>Approved by admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./deposit-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
 
-                            <div class="input-row">
-                                <label for="amount">Amount</label>
-                                <input type="number" id="amount" value="0.56730000">
-                            </div>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>25000.00</td>
+                                    <td>25000.00</td>
+                                    <td>Approved by admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./deposit-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
 
-                            <div class="input-row">
-                                <label for="status">Status</label>
-                                <input type="text" id="status" value="Approved" readonly>
-                            </div>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>25000.00</td>
+                                    <td>25000.00</td>
+                                    <td>Approved by admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./deposit-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
 
-                            <button class="submit-btn">
-                                Update
-                            </button>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>25000.00</td>
+                                    <td>25000.00</td>
+                                    <td>Approved by admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./deposit-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
 
-                            <p class="note">NOTE : Once you update the status as "Approved / Rejected", you can't update
-                                status again!</p>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>25000.00</td>
+                                    <td>25000.00</td>
+                                    <td>Approved by admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./deposit-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>25000.00</td>
+                                    <td>25000.00</td>
+                                    <td>Approved by admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./deposit-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>25000.00</td>
+                                    <td>25000.00</td>
+                                    <td>Approved by admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./deposit-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>25000.00</td>
+                                    <td>25000.00</td>
+                                    <td>Approved by admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./deposit-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>25000.00</td>
+                                    <td>25000.00</td>
+                                    <td>Approved by admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./deposit-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>25000.00</td>
+                                    <td>25000.00</td>
+                                    <td>Approved by admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./deposit-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>2022-06-22 12:16:27</td>
+                                    <td>KIRUBAKARAN</td>
+                                    <td>25000.00</td>
+                                    <td>25000.00</td>
+                                    <td>Approved by admin</td>
+                                    <td>
+                                        <div class="view-btn kyc-view-btn">
+                                            <a href="./deposit-view.html"><img src="../../images/view-icon.png"
+                                                    alt="view"> View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div id="pageNavPosition" class="pager-nav"></div>
                     </div>
-                    </form>
                 </section>
             </div>
         </main>

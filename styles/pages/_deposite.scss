@@ -1,5 +1,5 @@
-.deposite-container {
-    .deposite-head {
+.deposit-container {
+    .deposit-head {
         @include flex-row-spacebetween;
 
         @media screen and (max-width:1050px) {
@@ -11,7 +11,7 @@
         }
     }
 
-    .deposite-table {
+    .deposit-table {
         width: 100%;
         overflow-x: auto;
         margin-top: 4rem;
@@ -29,7 +29,7 @@
     }
 }
 
-.deposite-view-form {
+.deposit-view-form {
     flex: 1;
     display: flex;
     flex-direction: column;
